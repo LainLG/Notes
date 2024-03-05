@@ -1,3 +1,6 @@
+
+<div style=";border:solid; margin:20px; padding:3%">
+
 <h2 style= "color:#6598BD"> Practica OSPF </h2>
 
 ![Topologia](vx_images/556391290846099.png)
@@ -174,3 +177,4 @@
     show ip ospf
     show ip route
     ```
+  </div>

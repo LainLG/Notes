@@ -1,4 +1,6 @@
-# Practica
+<div style=";border:solid; margin:20px; padding:3%"> 
+
+<h1>Practica</h1>
 
 
 <h2 style="color:#066694"> 1) Comprobar Soporte  IPv6</h2>
@@ -127,3 +129,4 @@ Para mostrar los detalles de una subred IPv6 puede utilizar el comando <strong>i
 ```bash
  ipcalc -6 2001:db8:abcd::0/64
 ```
+</div>

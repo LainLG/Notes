@@ -1,4 +1,8 @@
-# Taller3
+
+<div style=";border:solid; margin:20px; padding:3%">
+
+
+<h1> Taller 3 </h1>
 
 ![DIseño red GNS3](vx_images/570650926595910.png)
 
@@ -175,3 +179,4 @@ show ip ospf
 show ip route
 ```
 
+</div>

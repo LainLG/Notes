@@ -1,4 +1,6 @@
-# Taller 4
+<div style=";border:solid; margin:20px; padding:3%">
+
+<h1> Taller 4 </h1>
 
 <h2>Practica de OSPF con diferentes areas</h2>
 
@@ -281,3 +283,5 @@ ping 192.168.1.2
 ping 192.168.2.2
 ```
 ![ping entre distintas areas](vx_images/509802682768050.png)
+
+</div>

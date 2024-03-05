@@ -1,11 +1,13 @@
-# Taller
+<div style=";border:solid; margin:20px; padding:3%">
+
+<h1> Taller <h1>
 
 
 <h2>Práctica 2 de Capa 3: Enrutamiento Estático</h2>
 
 En esta práctica se configurará un infraestructura sencilla compuesta por dos redes, cada una con su enrutador correspondiente.
 
-![Red a configurar](vx_images/212635410635112.png)
+![Topologia](vx_images/212635410635112.png)
 
 <br>
 Utilice el siguiente segmento de red para la <strong>red A: </strong>
@@ -202,3 +204,5 @@ Para ver la comunicacion entre el PC de la Red A y el PC de la Red B  usamos el 
 ping 192.168.1.2
 ```
 ![Ping PC Red A a PC Red B](vx_images/511393624668433.png)
+
+</div>

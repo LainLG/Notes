@@ -1,5 +1,7 @@
 <div style="background-color:#B4C7E5; border:solid; margin:2%; padding:2%">
 
+<h1>Capitulo 1<h1>
+
 <h1 style = "color:#066694"> <I> LOS GIGANTES DE SAN FRANCISCO GANAN EN
 GRANDE CON LA TECNOLOGÍA DE LA INFORMACIÓN </I></h1>
 

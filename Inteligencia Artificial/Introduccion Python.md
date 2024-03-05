@@ -1,4 +1,4 @@
-<div style ="background-color:#F3F3F3; padding:3%; border: solid ; border-color: black">
+<div style =" padding:3%; border: solid ; border-color: black">
 
 <h1 style= "color:#D3D300 ">Introduccion Python</h1>
 

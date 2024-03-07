@@ -91,20 +91,20 @@ cualquier_tipo = [ 1, 2,  3.1416, "Hola",  [ 1 , 2 , 3 , 4 , 5 ]  ]
 ```
 * Como se denota en el ejemplo una lista puede contener otras listas <strong>(cualquier otra estrucura de datos).</strong>
 
-* <h5> 3.1.1) Puedes acceder a elementos por índice.</h5>
+* <h5 style="color:#3FB25B"> 3.1.1) Puedes acceder a elementos por índice.</h5>
 
 ```python
 primer_elemento = mi_lista[0]  # Accede al primer elemento (1)
 tercer_elemento = mi_lista[2]  # Accede al tercer elemento ('j')
 ```
-*  <h5> 3.1.2) Actualización de elementos por índice</h5>
+*  <h5 style="color:#3FB25B"> 3.1.2) Actualización de elementos por índice</h5>
     * Puedes modificar el valor de un elemento utilizando su índice.
 
     ```python    
     mi_lista[2] = 'kiwi'  # Cambia 'pera' por 'kiwi'
     ```
 
-*  <h5> 3.1.3) Manipulación de listas:</h5>
+*  <h5 style="color:#3FB25B"> 3.1.3) Manipulación de listas:</h5>
     
     * Agregar elementos:
     
@@ -135,7 +135,7 @@ tercer_elemento = mi_lista[2]  # Accede al tercer elemento ('j')
     demarcaciones.remove('portero')  # Elimina 'portero'
     demarcaciones.sort()  # Ordena alfabéticamente
     ```
-* <h5> 3.1.4) Creación de sub-listas utilizando índices</h5> 
+* <h5 style="color:#3FB25B"> 3.1.4) Creación de sub-listas utilizando índices</h5> 
     * Puedes extraer una porción de la lista original utilizando la notación de slicing.
     * Los índices se especifican como [inicio:fin], donde inicio es inclusivo y fin es exclusivo.
    
@@ -145,7 +145,7 @@ tercer_elemento = mi_lista[2]  # Accede al tercer elemento ('j')
     Resultado: [2, 3, 4]
     ```
     
-* <h5> 3.1.5) Creación de sub-listas utilizando saltos</h5>
+* <h5 style="color:#3FB25B"> 3.1.5) Creación de sub-listas utilizando saltos</h5>
     * Puedes especificar un tercer valor en el slicing para definir el salto entre elementos.
 
     ```python
@@ -153,7 +153,7 @@ tercer_elemento = mi_lista[2]  # Accede al tercer elemento ('j')
     sub_lista_saltos = mi_lista[1:8:2]  # Extrae elementos desde el índice 1 hasta el 7 con un salto de 2
     Resultado: [2, 4, 6, 8]
     ```
-* <h5> 3.1.6) Creación de sub-listas utilizando índices negativos</h5>
+* <h5 style="color:#3FB25B"> 3.1.6) Creación de sub-listas utilizando índices negativos</h5>
     * Puedes utilizar índices negativos para contar desde el final de la lista.
     
     ```python
@@ -179,7 +179,7 @@ mi_tupla = (10, 20, 30, "pera")
 ```python
 mi_diccionario = {"nombre": "Juan", "edad": 25, "ciudad": "Bogotá"}
 ```
-* <h5> 3.3.1) Creación de diccionarios: </h5>
+* <h5 style="color:#3FB25B"> 3.3.1) Creación de diccionarios: </h5>
 
     * Puedes crear un diccionario utilizando llaves { } y separando cada par clave: valor con comas.
 
@@ -187,7 +187,7 @@ mi_diccionario = {"nombre": "Juan", "edad": 25, "ciudad": "Bogotá"}
     mi_diccionario = {"Nombre": "Sara", "Edad": 27, "Documento": 1003882}
     ```
     
-* <h5> 3.3.2) Acceso y modificación de elementos</h5>
+* <h5 style="color:#3FB25B"> 3.3.2) Acceso y modificación de elementos</h5>
     * Puedes acceder a los valores utilizando la clave (key)
 
     ```python
@@ -209,7 +209,7 @@ mi_diccionario = {"nombre": "Juan", "edad": 25, "ciudad": "Bogotá"}
     ```python
     mi_diccionario["Direccion"] = "Calle 123"  # Añade una nueva clave "Direccion"
     ```
-* <h5> 3.2.3) Iterar sobre un diccionario</h5>
+* <h5 style="color:#3FB25B"> 3.2.3) Iterar sobre un diccionario</h5>
     * Puedes iterar sobre las claves o los valores:
 
     ```python
@@ -224,7 +224,7 @@ mi_diccionario = {"nombre": "Juan", "edad": 25, "ciudad": "Bogotá"}
         print(clave, valor)
     ```
 
-* <h5> 3.3.4) Diccionarios anidados</h5>
+* <h5 style="color:#3FB25B"> 3.3.4) Diccionarios anidados</h5>
     * Puedes tener diccionarios dentro de otros diccionarios:
 
     ```python
@@ -233,7 +233,7 @@ mi_diccionario = {"nombre": "Juan", "edad": 25, "ciudad": "Bogotá"}
     diccionario_anidado = {"anidado1": anidado1, "anidado2": anidado2}
     Código generado por IA. Revisar y usar cuidadosamente. Más información sobre preguntas frecuentes.
         ```
-* <h5> 3.3.5) Métodos útiles</h5>
+* <h5 style="color:#3FB25B"> 3.3.5) Métodos útiles</h5>
 
     ```python
     clear(): Elimina todos los elementos del diccionario.

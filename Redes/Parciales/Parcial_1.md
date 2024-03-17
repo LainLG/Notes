@@ -441,9 +441,9 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.148.193 0.0.0.3 area 1
-    network 160.223.148.197  0.0.0.3 area 1
-    network 160.223.148.237 0.0.0.3 area 0
+    network 160.223.148.192 0.0.0.3 area 1
+    network 160.223.148.196  0.0.0.3 area 1
+    network 160.223.148.236 0.0.0.3 area 0
     network 160.223.148.224 0.0.0.3 area 0
     end
     ```
@@ -456,8 +456,8 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.147.201 0.0.0.3 area 2
-    network 160.223.147.1  0.0.0.127 area 2
+    network 160.223.148.200 0.0.0.3 area 2
+    network 160.223.147.0  0.0.0.127 area 2
     end
     ```
 
@@ -469,8 +469,8 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.147.129 0.0.0.3 area 2
-    network 160.223.148.205  0.0.0.127 area 2
+    network 160.223.147.128 0.0.0.3 area 2
+    network 160.223.148.204  0.0.0.127 area 2
     end
     ```
 
@@ -482,10 +482,10 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.148.202 0.0.0.3 area 2
-    network 160.223.148.206  0.0.0.3 area 2
-    network 160.223.148.226 0.0.0.3 area 0
-    network 160.223.148.229 0.0.0.3 area 0
+    network 160.223.148.200 0.0.0.3 area 2
+    network 160.223.148.204  0.0.0.3 area 2
+    network 160.223.148.224 0.0.0.3 area 0
+    network 160.223.148.228 0.0.0.3 area 0
     end
     ```
 
@@ -498,10 +498,10 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.148.237 0.0.0.3 area 0
-    network 160.223.148.234  0.0.0.3 area 0
-    network 160.223.148.210 0.0.0.3 area 3
-    network 160.223.148.214 0.0.0.3 area 3
+    network 160.223.148.236 0.0.0.3 area 0
+    network 160.223.148.232  0.0.0.3 area 0
+    network 160.223.148.208 0.0.0.3 area 3
+    network 160.223.148.212 0.0.0.3 area 3
     end
     ```
 
@@ -513,8 +513,8 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.148.209 0.0.0.3 area 3
-    network  160.223.144.1  0.0.0.255 area 3
+    network 160.223.148.208 0.0.0.3 area 3
+    network  160.223.144.0  0.0.0.255 area 3
     end
     ```
 
@@ -526,8 +526,8 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.148.213 0.0.0.3 area 3
-    network  160.223.148.1  0.0.0.127 area 3
+    network 160.223.148.212 0.0.0.3 area 3
+    network  160.223.148.0  0.0.0.127 area 3
     end
     ```
 
@@ -539,10 +539,10 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.148.233 0.0.0.3 area 0
-    network 160.223.148.230  0.0.0.3 area 0
-    network 160.223.148.218 0.0.0.3 area 4
-    network 160.223.148.222 0.0.0.3 area 4
+    network 160.223.148.232 0.0.0.3 area 0
+    network 160.223.148.228  0.0.0.3 area 0
+    network 160.223.148.216 0.0.0.3 area 4
+    network 160.223.148.220 0.0.0.3 area 4
     end
     ```
 
@@ -554,8 +554,8 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.148.217 0.0.0.3 area 4
-    network  160.223.148.129  0.0.0.31 area 4
+    network 160.223.148.21 0.0.0.3 area 4
+    network  160.223.148.128  0.0.0.31 area 4
     end
     ```
 
@@ -568,8 +568,8 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.148.221 area 4
-    network  160.223.146.1  0.0.0.255 area 4
+    network 160.223.148.220 area 4
+    network  160.223.146.0  0.0.0.255 area 4
     end
     ```
 

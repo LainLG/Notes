@@ -16,7 +16,21 @@
 
 160.223.144.0/20
 
-
+| CIDR | Máscara de Subred | Máscara Comodín | # de Direcciones IP | # de Direcciones IP Utilizables |
+| -------- | -------------------------- | ------------------------- | -------------------------- | ----------------------------------------- |
+| /32     | 255.255.255.255      | 0.0.0.0                    | 1                              | 1                                                |
+| /31     | 255.255.255.254      | 0.0.0.1                    | 2                              | 2*                                              |
+| /30     | 255.255.255.252      | 0.0.0.3                    | 4                              | 2                                                |
+| /29     | 255.255.255.248      | 0.0.0.7                    | 8                              | 6                                                |
+| /28     | 255.255.255.240      | 0.0.0.15                  | 16                            | 14                                              |
+| /27     | 255.255.255.224      | 0.0.0.31                  | 32                            | 30                                              |
+| /26     | 255.255.255.192      | 0.0.0.63                  | 64                            | 62                                              |
+| /25     | 255.255.255.128      | 0.0.0.127                | 128                          | 126                                            |
+| /24     | 255.255.255.0          | 0.0.0.255                | 256                          | 254                                            |
+| /23     | 255.255.254.0          | 0.0.1.255                | 512                          | 510                                            |
+| /22     | 255.255.252.0          | 0.0.3.255                | 1,024                       | 1,022                                         |
+| /21     | 255.255.248.0          | 0.0.7.255                | 2,048                       | 2,046                                         |
+| /20     | 255.255.240.0          | 0.0.15.255              | 4,096                       | 4,094                                         |
 
 
  | Red  | Solicitud de Host  | Host Encontrados  | Direccion de Red  | Mask  | Mascara  | Primera IP utilizable  | Ultima IP utilizable  | Direccion de Broadcast |
@@ -27,20 +41,20 @@
 | C | 112  | 126  | 160.223.147.0  | /25  | 255.255.255.128  | 160.223.147.1 | 160.223.147.126 |  160.223.147.127  |    
 | D | 98 | 126  |  160.223.147.128 | /25  | 255.255.255.128  | 160.223.147.129  | 160.223.147.254  | 160.223.147.255 |
 | F | 84 | 126  | 160.223.148.0  | /25  | 255.255.255.128  | 160.223.148.1  | 160.223.148.126  |  160.223.148.127 |
-| G | 27 | 30  | 160.223.148.128  | /27   | 255.255.255.224  | 160.223.148.129  | 160.223.148.158  | 160.223.147.159   |
-| B | 17 | 30  | 160.223.147.160  | /27  | 255.255.255.224  | 160.223.147.161  | 160.223.147.190  | 160.223.147.191  |
-| Enlace A | 2 | 2  | 160.223.147.192  | /30  | 255.255.252  | 160.223.147.193  | 160.223.147.194 | 160.223.147.195  |
-| Enlace B | 2 | 2  | 160.223.147.196 | /30  | 255.255.252  | 160.223.147.197  | 160.223.147.198  | 160.223.147.199  |
-| Enlace C | 2 | 2  | 160.223.147.200  | /30 | 255.255.252  | 160.223.147.201  | 160.223.147.202  | 160.223.147.203  |
-| Enlace D | 2 | 2  | 160.223.147.204  | /30  | 255.255.252   | 160.223.147.205 | 160.223.147.206  | 160.223.147.207 |
-| Enlace E | 2 | 2  | 160.223.147.208  | /30  | 255.255.252  | 160.223.147.209   | 160.223.147.210  | 160.223.147.211 |
-| Enlace F | 2 | 2  | 160.223.147.212  | /30  | 255.255.252  | 160.223.147.213   | 160.223.147.214  | 160.223.147.215 |
-| Enlace G | 2 | 2  | 160.223.147.216  | /30  | 255.255.252  | 160.223.147.217  | 160.223.147.218  | 160.223.147.219  |
-| Enlace H | 2 | 2  | 160.223.147.220  | /30  | 255.255.252  | 160.223.147.221   | 160.223.147.222  | 160.223.147.223  |
-| Enlace 1 | 2 | 2  | 160.223.147.224  | /30  | 255.255.252  | 160.223.147.225   | 160.223.147.226  | 160.223.147.227  |
-| Enlace 2 | 2 | 2  | 160.223.147.228  | /30  | 255.255.252  | 160.223.147.229   | 160.223.147.230   | 160.223.147.231 |
-| Enlace 3 | 2 | 2  | 160.223.147.232  | /30  | 255.255.252  | 160.223.147.233  | 160.223.147.234  |  160.223.147.235  |
-| Enlace 4 | 2 | 2  | 160.223.147.236  | /30  | 255.255.252  | 160.223.147.237  | 160.223.147.238  |  160.223.147.239  |
+| G | 27 | 30  | 160.223.148.128  | /27   | 255.255.255.224  | 160.223.148.129  | 160.223.148.158  | 160.223.148.159   |
+| B | 17 | 30  | 160.223.148.160  | /27  | 255.255.255.224  | 160.223.148.161  | 160.223.148.190  | 160.223.148.191  |
+| Enlace A | 2 | 2  | 160.223.148.192  | /30  | 255.255.252  | 160.223.148.193  | 160.223.148.194 | 160.223.148.195  |
+| Enlace B | 2 | 2  | 160.223.148.196 | /30  | 255.255.252  | 160.223.148.197  | 160.223.148.198  | 160.223.148.199  |
+| Enlace C | 2 | 2  | 160.223.148.200  | /30 | 255.255.252  | 160.223.148.201  | 160.223.148.202  | 160.223.148.203  |
+| Enlace D | 2 | 2  | 160.223.148.204  | /30  | 255.255.252   | 160.223.148.205 | 160.223.148.206  | 160.223.148.207 |
+| Enlace E | 2 | 2  | 160.223.148.208  | /30  | 255.255.252  | 160.223.148.209   | 160.223.148.210  | 160.223.148.211 |
+| Enlace F | 2 | 2  | 160.223.148.212  | /30  | 255.255.252  | 160.223.148.213   | 160.223.148.214  | 160.223.148.215 |
+| Enlace G | 2 | 2  | 160.223.148.216  | /30  | 255.255.252  | 160.223.148.217  | 160.223.148.218  | 160.223.148.219  |
+| Enlace H | 2 | 2  | 160.223.148.220  | /30  | 255.255.252  | 160.223.148.221   | 160.223.148.222  | 160.223.148.223  |
+| Enlace 1 | 2 | 2  | 160.223.148.224  | /30  | 255.255.252  | 160.223.148.225   | 160.223.148.226  | 160.223.148.227  |
+| Enlace 2 | 2 | 2  | 160.223.148.228  | /30  | 255.255.252  | 160.223.148.229   | 160.223.148.230   | 160.223.148.231 |
+| Enlace 3 | 2 | 2  | 160.223.148.232  | /30  | 255.255.252  | 160.223.148.233  | 160.223.148.234  |  160.223.148.235  |
+| Enlace 4 | 2 | 2  | 160.223.148.236  | /30  | 255.255.252  | 160.223.148.237  | 160.223.148.238  |  160.223.148.239  |
 
 
 
@@ -61,7 +75,7 @@ show
 * PC Red B
 
 ```bash
-ip 160.223.147.162 255.255.255.224 160.223.147.161
+ip 160.223.148.162 255.255.255.224 160.223.147.161
 save 
 show
 ```
@@ -102,7 +116,7 @@ ip  160.223.148.130 255.255.255.224  160.223.148.129
 save 
 show
 ```
-* PC Red H160.223.148.1
+* PC Red H
 
 ```bash
 ip 160.223.146.2 255.255.255.0 160.223.146.1
@@ -138,11 +152,11 @@ Para configurar el router 2 ejecute los siguientes comandos en la cónsola del m
 enable
 configure terminal
 interface FastEthernet 0/1
-ip address 160.223.147.197 255.255.255.252
+ip address 160.223.148.197 255.255.255.252
 no shutdown
 exit
 interface fastEthernet 0/0
-ip address 160.223.147.161 255.255.255.224
+ip address 160.223.148.161 255.255.255.224
 no shutdown
 exit
 end
@@ -159,21 +173,21 @@ enable
 configure terminal
 
 interface fastEthernet 0/0
-ip address 160.223.147.238 255.255.255.252
+ip address 160.223.148.238 255.255.255.252
 no shutdown
 exit
 interface FastEthernet 0/1
-ip address 160.223.147.225 255.255.255.252
+ip address 160.223.148.225 255.255.255.252
 no shutdown
 exit
 interface FastEthernet 1/0
-ip address 160.223.147.194 255.255.255.252
+ip address 160.223.148.194 255.255.255.252
 no switchport
 no shutdown
 exit
 interface fastEthernet 1/1
 no switchport
-ip address 160.223.147.198  255.255.255.252
+ip address 160.223.148.198  255.255.255.252
 no shutdown
 exit
 end
@@ -189,7 +203,7 @@ Para configurar el router 4 ejecute los siguientes comandos en la cónsola del m
 enable
 configure terminal
 interface FastEthernet 0/1
-ip address 160.223.147.201  255.255.255.252
+ip address 160.223.148.201  255.255.255.252
 no shutdown
 exit
 interface fastEthernet 0/0
@@ -209,7 +223,7 @@ Para configurar el router 5 ejecute los siguientes comandos en la cónsola del m
 enable
 configure terminal
 interface FastEthernet 0/1
-ip address 160.223.147.205  255.255.255.252
+ip address 160.223.148.205  255.255.255.252
 no shutdown
 exit
 interface fastEthernet 0/0
@@ -230,21 +244,21 @@ enable
 configure terminal
 
 interface fastEthernet 0/0
-ip address 160.223.147.229 255.255.255.252
+ip address 160.223.148.229 255.255.255.252
 no shutdown
 exit
 interface FastEthernet 0/1
-ip address 160.223.147.226 255.255.255.252
+ip address 160.223.148.226 255.255.255.252
 no shutdown
 exit
 interface FastEthernet 1/0
-ip address 160.223.147.202 255.255.255.252
+ip address 160.223.148.202 255.255.255.252
 no switchport
 no shutdown
 exit
 interface fastEthernet 1/1
 no switchport
-ip address 160.223.147.206  255.255.255.252
+ip address 160.223.148.206  255.255.255.252
 no shutdown
 exit
 end
@@ -260,21 +274,21 @@ enable
 configure terminal
 
 interface fastEthernet 0/0
-ip address 160.223.147.237 255.255.255.252
+ip address 160.223.148.237 255.255.255.252
 no shutdown
 exit
 interface FastEthernet 0/1
-ip address 160.223.147.234 255.255.255.252
+ip address 160.223.148.234 255.255.255.252
 no shutdown
 exit
 interface FastEthernet 1/0
-ip address 160.223.147.210 255.255.255.252
+ip address 160.223.148.210 255.255.255.252
 no switchport
 no shutdown
 exit
 interface fastEthernet 1/1
 no switchport
-ip address 160.223.147.214  255.255.255.252
+ip address 160.223.148.214  255.255.255.252
 no shutdown
 exit
 end
@@ -290,7 +304,7 @@ Para configurar el router 8 ejecute los siguientes comandos en la cónsola del m
 enable
 configure terminal
 interface FastEthernet 0/1
-ip address 160.223.147.209  255.255.255.252
+ip address 160.223.148.209  255.255.255.252
 no shutdown
 exit
 interface fastEthernet 0/0
@@ -314,7 +328,7 @@ ip address 160.223.148.1  255.255.255.252
 no shutdown
 exit
 interface fastEthernet 0/0
-ip address  160.223.147.213 255.255.255..128 
+ip address  160.223.148.213 255.255.255..128 
 no shutdown
 exit
 end
@@ -331,21 +345,21 @@ enable
 configure terminal
 
 interface fastEthernet 0/0
-ip address 160.223.147.230 255.255.255.252
+ip address 160.223.148.230 255.255.255.252
 no shutdown
 exit
 interface FastEthernet 0/1
-ip address 160.223.147.233 255.255.255.252
+ip address 160.223.148.233 255.255.255.252
 no shutdown
 exit
 interface FastEthernet 1/0
-ip address 160.223.147.218 255.255.255.252
+ip address 160.223.148.218 255.255.255.252
 no switchport
 no shutdown
 exit
 interface fastEthernet 1/1
 no switchport
-ip address 160.223.147.222  255.255.255.252
+ip address 160.223.148.222  255.255.255.252
 no shutdown
 exit
 end
@@ -361,7 +375,7 @@ Para configurar el router 11 ejecute los siguientes comandos en la cónsola del 
 enable
 configure terminal
 interface FastEthernet 0/1
-ip address 160.223.147.217  255.255.255.252
+ip address 160.223.148.217  255.255.255.252
 no shutdown
 exit
 interface fastEthernet 0/0
@@ -381,7 +395,7 @@ Para configurar el router 12 ejecute los siguientes comandos en la cónsola del 
 enable
 configure terminal
 interface FastEthernet 0/1
-ip address 160.223.147.221 255.255.255.252
+ip address 160.223.148.221 255.255.255.252
 no shutdown
 exit
 interface fastEthernet 0/0
@@ -402,8 +416,8 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.147.193  0.0.0.3 area 1
-    network 160.223.144.1 0.0.0.255 area 1
+    network 160.223.147.192  0.0.0.3 area 1
+    network 160.223.144.0 0.0.0.255 area 1
     end
     ```
    * <h4>3.2) Configuración del Enrutador 2</h4>
@@ -414,8 +428,8 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.147.197   0.0.0.3 area 1
-    network 160.223.147.161   0.0.0.31 area 1
+    network 160.223.148.196   0.0.0.3 area 1
+    network 160.223.148.160   0.0.0.31 area 1
     end
     ```
 
@@ -427,10 +441,10 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.147.194 0.0.0.3 area 1
-    network 160.223.147.198  0.0.0.3 area 1
-    network 160.223.147.238 0.0.0.3 area 0
-    network 160.223.147.225 0.0.0.3 area 0
+    network 160.223.148.193 0.0.0.3 area 1
+    network 160.223.148.197  0.0.0.3 area 1
+    network 160.223.148.237 0.0.0.3 area 0
+    network 160.223.148.224 0.0.0.3 area 0
     end
     ```
 
@@ -456,7 +470,7 @@ show ip interface brief
     configure terminal
     router ospf 1
     network 160.223.147.129 0.0.0.3 area 2
-    network 160.223.147.205  0.0.0.127 area 2
+    network 160.223.148.205  0.0.0.127 area 2
     end
     ```
 
@@ -468,10 +482,10 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.147.202 0.0.0.3 area 2
-    network 160.223.147.206  0.0.0.3 area 2
-    network 160.223.147.226 0.0.0.3 area 0
-    network 160.223.147.229 0.0.0.3 area 0
+    network 160.223.148.202 0.0.0.3 area 2
+    network 160.223.148.206  0.0.0.3 area 2
+    network 160.223.148.226 0.0.0.3 area 0
+    network 160.223.148.229 0.0.0.3 area 0
     end
     ```
 
@@ -484,10 +498,10 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.147.237 0.0.0.3 area 0
-    network 160.223.147.234  0.0.0.3 area 0
-    network 160.223.147.210 0.0.0.3 area 3
-    network 160.223.147.214 0.0.0.3 area 3
+    network 160.223.148.237 0.0.0.3 area 0
+    network 160.223.148.234  0.0.0.3 area 0
+    network 160.223.148.210 0.0.0.3 area 3
+    network 160.223.148.214 0.0.0.3 area 3
     end
     ```
 
@@ -499,7 +513,7 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.147.209 0.0.0.3 area 3
+    network 160.223.148.209 0.0.0.3 area 3
     network  160.223.144.1  0.0.0.255 area 3
     end
     ```
@@ -512,7 +526,7 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.147.213 0.0.0.3 area 3
+    network 160.223.148.213 0.0.0.3 area 3
     network  160.223.148.1  0.0.0.127 area 3
     end
     ```
@@ -525,36 +539,36 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.147.233 0.0.0.3 area 0
-    network 160.223.147.230  0.0.0.3 area 0
-    network 160.223.147.218 0.0.0.3 area 4
-    network 160.223.147.222 0.0.0.3 area 4
+    network 160.223.148.233 0.0.0.3 area 0
+    network 160.223.148.230  0.0.0.3 area 0
+    network 160.223.148.218 0.0.0.3 area 4
+    network 160.223.148.222 0.0.0.3 area 4
     end
     ```
 
-     * <h4>3.9) Configuración del Enrutador 9</h4>
+     * <h4>3.11) Configuración del Enrutador 11</h4>
 
-    Ejecute los siguientes comandos en el enrutador 9
+    Ejecute los siguientes comandos en el enrutador 11
 
 
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.147.217 0.0.0.3 area 4
+    network 160.223.148.217 0.0.0.3 area 4
     network  160.223.148.129  0.0.0.31 area 4
     end
     ```
 
 
-   * <h4>3.9) Configuración del Enrutador 9</h4>
+   * <h4>3.12) Configuración del Enrutador 12</h4>
 
-    Ejecute los siguientes comandos en el enrutador 9
+    Ejecute los siguientes comandos en el enrutador 12
 
 
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.147.221 area 4
+    network 160.223.148.221 area 4
     network  160.223.146.1  0.0.0.255 area 4
     end
     ```

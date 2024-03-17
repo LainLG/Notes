@@ -138,7 +138,7 @@ exit
 interface fastEthernet 0/0
 ip address 160.223.144.1 255.255.255.0
 no shutdown
-exit160.223.147.217 
+exit
 end
 wr
 show ip interface brief
@@ -181,8 +181,12 @@ ip address 160.223.148.225 255.255.255.252
 no shutdown
 exit
 interface FastEthernet 1/0
+<<<<<<< Updated upstream
 ip address 160.223.148.194 255.255.255.252
+=======
+>>>>>>> Stashed changes
 no switchport
+ip address 160.223.147.194 255.255.255.252
 no shutdown
 exit
 interface fastEthernet 1/1

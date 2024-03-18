@@ -57,8 +57,7 @@
 | Enlace 4 | 2 | 2  | 160.223.148.236  | /30  | 255.255.252  | 160.223.148.237  | 160.223.148.238  |  160.223.148.239  |
 
 
-
-![](vx_images/199575106635203.png)
+![](vx_images/218914533960954.png)
 
 <h3>1) Configuración De Los PCs</h3>
 
@@ -68,14 +67,14 @@ Primero Asignamos las ip a los PCs de cada red:
 * PC Red A
 
 ```bash
-ip 160.223.144.2 255.255.255.0 160.223.144.1
+ip 160.223.145.2 255.255.255.0 160.223.145.1
 save 
 show
 ```
 * PC Red B
 
 ```bash
-ip 160.223.148.162 255.255.255.224 160.223.147.161
+ip 160.223.148.162 255.255.255.224 160.223.148.161
 save 
 show
 ```
@@ -132,11 +131,11 @@ Para configurar el router 1 ejecute los siguientes comandos en la cónsola del m
 enable
 configure terminal
 interface FastEthernet 0/1
-ip address 160.223.147.193  255.255.255.252
+ip address 160.223.148.193  255.255.255.252
 no shutdown
 exit
 interface fastEthernet 0/0
-ip address 160.223.144.1 255.255.255.0
+ip address 160.223.145.1 255.255.255.0
 no shutdown
 exit
 end
@@ -181,12 +180,8 @@ ip address 160.223.148.225 255.255.255.252
 no shutdown
 exit
 interface FastEthernet 1/0
-<<<<<<< Updated upstream
 ip address 160.223.148.194 255.255.255.252
-=======
->>>>>>> Stashed changes
 no switchport
-ip address 160.223.147.194 255.255.255.252
 no shutdown
 exit
 interface fastEthernet 1/1
@@ -327,12 +322,12 @@ Para configurar el router 9 ejecute los siguientes comandos en la cónsola del m
 ```bash
 enable
 configure terminal
-interface FastEthernet 0/1
-ip address 160.223.148.1  255.255.255.252
+interface FastEthernet 0/0
+ip address 160.223.148.1  255.255.255.128
 no shutdown
 exit
-interface fastEthernet 0/0
-ip address  160.223.148.213 255.255.255..128 
+interface fastEthernet 0/1
+ip address  160.223.148.213 255.255.255.252
 no shutdown
 exit
 end
@@ -420,8 +415,8 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.147.192  0.0.0.3 area 1
-    network 160.223.144.0 0.0.0.255 area 1
+    network 160.223.148.192  0.0.0.3 area 1
+    network 160.223.145.0 0.0.0.255 area 1
     end
     ```
    * <h4>3.2) Configuración del Enrutador 2</h4>
@@ -558,7 +553,7 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.148.21 0.0.0.3 area 4
+    network 160.223.148.216 0.0.0.3 area 4
     network  160.223.148.128  0.0.0.31 area 4
     end
     ```
@@ -572,7 +567,7 @@ show ip interface brief
     ```bash
     configure terminal
     router ospf 1
-    network 160.223.148.220 area 4
+    network 160.223.148.220 0.0.0.3 area 4
     network  160.223.146.0  0.0.0.255 area 4
     end
     ```

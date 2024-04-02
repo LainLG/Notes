@@ -1,2 +1,0 @@
-# Ecuaciones no lineales
-

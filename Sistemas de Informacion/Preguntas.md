@@ -25,7 +25,7 @@
     Por ejemplo tenemos el proceso de cumplimiento de un pedido donde se exigen la estrecha coordinación de las funciones de ventas, contabilidad y manufactura.
     </strong></p>
     
-4. **¿Un proceso de negocio son los pasos que las empresas deben seguir para ser felices?}**
+4. **¿Un proceso de negocio son los pasos que las empresas deben seguir para ser felices?**
     
     <span style = "color:red "><strong>Falso.</strong></span>
 
@@ -152,7 +152,7 @@
     Una solucion son las aplicaciones empresariales que ayudan a los negocios a ser mas flexibles y productivos, al cordinar sus procesos de negocio mas de cerca e integrar grupos de procesos.
     </strong></p>
         
-20. **¿Los sitemas de informacion solo se utilizan en grandes empresas?**
+20. **¿Los sistemas de informacion solo se utilizan en grandes empresas?**
     
     <span style = "color:red "><strong>Falso.</strong></span>
     
@@ -211,6 +211,8 @@
 27. **¿Los sistemas de información no son necesarios para mejorar los procesos de negocios y la toma de decisiones de las empresas?**
     
     <span style = "color:red "><strong>Falso.</strong></span>
+    
+    <p  style="background-color:#184756; padding:10px; border-radius: 10px ; color:white " ><strong>    
     El capítulo resalta la importancia de los sistemas de información para mejorar los procesos de negocios y la toma de decisiones en las empresas, por lo tanto, la afirmación es falsa.
     </strong></p>
     

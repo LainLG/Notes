@@ -1,45 +1,31 @@
 {
-    "created_time": "2024-03-05T19:43:52Z",
+    "created_time": "",
     "files": [
         {
             "attachment_folder": "",
-            "created_time": "2024-03-05T19:43:52Z",
-            "id": "8",
-            "modified_time": "2024-03-20T13:22:05Z",
-            "name": "Capitulo_1.md",
-            "signature": "784285914999780856",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2024-04-01T21:35:44Z",
-            "id": "9",
-<<<<<<< Updated upstream
-            "modified_time": "2024-04-05T14:19:47Z",
-=======
-            "modified_time": "2024-04-05T01:54:33Z",
->>>>>>> Stashed changes
-            "name": "Preguntas.md",
-            "signature": "207324078352560",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2024-04-03T21:48:07Z",
-            "id": "10",
-            "modified_time": "2024-04-05T17:06:32Z",
+            "created_time": "2024-04-06T14:01:16Z",
+            "id": "12",
+            "modified_time": "2024-04-06T14:01:16Z",
             "name": "Capitulo_2.md",
-            "signature": "207324078526103",
+            "signature": "784285915002525100",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2024-04-06T14:01:24Z",
+            "id": "13",
+            "modified_time": "2024-04-06T14:01:24Z",
+            "name": "Preguntas.md",
+            "signature": "5546498803304060340",
             "tags": [
             ]
         }
     ],
     "folders": [
     ],
-    "id": "6",
-    "modified_time": "2024-03-05T19:43:52Z",
-    "signature": "207324076013048",
+    "id": "11",
+    "modified_time": "",
+    "signature": "207324078757290",
     "version": 3
 }

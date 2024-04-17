@@ -576,10 +576,38 @@ show ip interface brief
     end
     ```
 
-<h3> 4) Verificación de las conexiones </h3>
+* <h3> 4) Verificación de las conexiones </h3>
 Para verificar el funcionamiento de la topología y la creación de las rutas dinámicas podemos ejecutar los siguientes comandos
 
 ```bash
 show ip ospf
 show ip route
 ```
+
+<h2>3) Verificacion de las conexiones </h2>
+
+Para verificar el funcionamiento de la topologia y la creación de las rutas dinámicas podemos ejecutar los siguientes comandos.
+
+
+```bash
+
+show ipv6 ospf neigh
+show ipv6 ospf rib
+
+```
+
+<h2>4) Configuracion de los PCs</h2>
+
+En las consolas de los PCs ejecuten los comandos para configurar los IPs correspondientes;
+
+```bash
+
+ip FD04::2/64 FD04::1
+ip FD05::2/64 FD05::1
+ip FD06::2/64 FD06::1
+ip FD08::2/64 FD08::1
+
+```
+
+
+</div>

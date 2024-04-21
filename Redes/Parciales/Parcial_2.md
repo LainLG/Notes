@@ -532,6 +532,8 @@ show ip interface brief
 
 Encienda el switch, abra una consola y ejecute los siguientes comandos
 
+* <h3> Configurar las VLANs en el Switch 1,2,3</h3>
+
 ```bash
 enable 
 configure terminal
@@ -541,6 +543,21 @@ vlan 200
 name professors
 exit
 ```
+* <h3> Configurar las VLANs en el Switch 4,5</h3>
+
+
+```bash
+enable 
+configure terminal
+vlan 100
+name students
+vlan 200
+name professors
+exit
+```
+* <h3> Configurar las VLANs en el Switch 7,8,9</h3>
+
+
 ```bash
 enable 
 configure terminal
@@ -550,6 +567,8 @@ vlan 400
 name secretary
 exit
 ```
+* <h3> Configurar las VLANs en el Switch 10,12</h3>
+
 
 ```bash
 enable 
@@ -560,6 +579,9 @@ vlan 500
 name laboratory
 exit
 ```
+* <h3> Configurar las VLANs en el Switch 13,14,15</h3>
+
+
 ```bash
 enable 
 configure terminal

@@ -9,7 +9,7 @@ También deben configurar el protocolo de enrutamiento dinámico externo, entre 
 
 <h2> Redes por definir </h2>
 
-* Network: 160.223.144.0/20
+* Network: 160.223.144.0/20 
     * **AREA 1:** 254
     * **Enlace A:** 2
     * **Enlace B:** 2
@@ -35,6 +35,12 @@ También deben configurar el protocolo de enrutamiento dinámico externo, entre 
 | /20     | 255.255.240.0          | 0.0.15.255              | 4,096                       | 4,094                                         |
 
 
+**Como tenemos una rede con 16 clases C utilizaremos la mitad paracada sistema autonomo.**
+
+<h2>Sistema autonomo 1</h2>
+
+`**Network:**` 160.223.144.0/21
+
  | Red  | Solicitud de Host  | Host Encontrados  | Direccion de Red  | Mask  | Mascara  | Primera IP utilizable  | Ultima IP utilizable  | Direccion de Broadcast |
 |---|---|---|---|---|---|---|---|---|
 | Area 1 | 254  | 254  | 160.223.144.0  | /24  | 255.255.255.0  | 160.223.144.1  | 160.223.144.254  | 160.223.144.255   |
@@ -42,9 +48,8 @@ También deben configurar el protocolo de enrutamiento dinámico externo, entre 
 | Enlace B | 2 | 2  | 160.223.145.4  | /30  | 255.255.252  | 160.223.145.5  | 160.223.148.6  |  160.223.145.7  |
 | Enlace C | 2 | 2  | 160.223.145.8  | /30  | 255.255.252  | 160.223.145.9  | 160.223.148.10  |  160.223.145.11 |
 | Enlace D | 2 | 2  | 160.223.145.12  | /30  | 255.255.252  | 160.223.145.13  | 160.223.148.14  |  160.223.145.15  |
+| BGP | 2 | 2  | 160.223.145.16  | /30  | 255.255.252  | 160.223.145.17  | 160.223.148.18  |  160.223.145.19  |
 
-
-![](vx_images/65362297909562.png)
 
 <h3>1) Configuración De Los PCs</h3>
 
@@ -92,17 +97,18 @@ Para configurar el router 2 ejecute los siguientes comandos en la cónsola del m
 ```bash
 enable
 configure terminal
-interface FastEthernet 0/0
-ip address 160.223.145.5 255.255.255.252
+interface fastEthernet 0/0
+ip address 160.223.145.14 255.255.255.252
 no shutdown
 exit
 interface fastEthernet 0/1
 ip address 160.223.145.2  255.255.255.252
 no shutdown
 exit
-interface fastEthernet 1/0
+interface FastEthernet 1/0
 no switchport
-ip address 160.223.145.14 255.255.255.252
+ip address 160.223.145.5 255.255.255.252
+no switchport
 no shutdown
 exit
 end
@@ -116,13 +122,13 @@ Para configurar el router 3 ejecute los siguientes comandos en la cónsola del m
 ```bash
 enable
 configure terminal
-interface FastEthernet 0/0
-ip address 160.223.145.6 255.255.255.252
+interface fastEthernet 0/1
+ip address 160.223.145.9  255.255.255.252
 no shutdown
 exit
-interface fastEthernet 1/0
+interface FastEthernet 1/0
 no switchport
-ip address 160.223.145.9  255.255.255.252
+ip address 160.223.145.6 255.255.255.252
 no shutdown
 exit
 end
@@ -141,12 +147,12 @@ ip address 160.223.145.13 255.255.255.252
 no shutdown
 exit
 interface fastEthernet 0/1
-ip address 160.223.145.17  255.255.255.252
+ip address 160.223.145.10  255.255.255.252
 no shutdown
 exit
-interface fastEthernet 1/0
+interface fastEthernet 1/1
 no switchport
-ip address 160.223.145.10  255.255.255.252
+ip address 160.223.145.17  255.255.255.252
 no shutdown
 exit
 end
@@ -203,6 +209,7 @@ network 160.223.145.8 0.0.0.3 area 0
 network 160.223.145.12 0.0.0.3 area 0
 network 160.223.145.16 0.0.0.3 area 2
 
+
 end
 ```
 
@@ -214,24 +221,17 @@ show ip ospf
 show ip route
 ```
 
-<h2> Redes por definir </h2>
+<h2> Sistema autonomo 2 </h2>
 
-* Network: 141.108.16.0/20
-    * **AREA 1:** 254
-    * **Enlace A:** 2
-    * **Enlace B:** 2
-    * **Enlace C:** 2
-    * **Enlace D:** 2
-
+`**Network:**` 160.223.152.0/21
 
  | Red  | Solicitud de Host  | Host Encontrados  | Direccion de Red  | Mask  | Mascara  | Primera IP utilizable  | Ultima IP utilizable  | Direccion de Broadcast |
 |---|---|---|---|---|---|---|---|---|
-| Area 1 | 254  | 254  | 141.108.16.0  | /24  | 255.255.255.0  | 141.108.16.1  | 141.108.16.254  | 141.108.17.255   |
-| Enlace A | 2 | 2  | 141.108.17.0 | /30  | 255.255.252  | 141.108.17.1  | 141.108.17.2  |  141.108.17.3  |
-| Enlace B | 2 | 2  | 141.108.17.4  | /30  | 255.255.252  | 141.108.17.5  | 141.108.17.6  |  141.108.17.7  |
-| Enlace C | 2 | 2  | 141.108.17.8  | /30  | 255.255.252  | 141.108.17.9  | 141.108.17.10  |  141.108.17.11 |
-| Enlace D | 2 | 2  | 141.108.17.12  | /30  | 255.255.252  | 141.108.17.13  | 141.108.17.14  |  141.108.17.15  |
-
+| Area 1 | 254  | 254  | 160.223.152.0  | /24  | 255.255.255.0  | 160.223.152.1  | 160.223.152.254  | 160.223.152.255   |
+| Enlace A | 2 | 2  | 160.223.153.0  | /30  | 255.255.252  | 160.223.153.1  | 160.223.153.2  |  160.223.153.3  |
+| Enlace B | 2 | 2  | 160.223.153.4  | /30  | 255.255.252  | 160.223.153.5  | 160.223.153.6  |  160.223.153.7  |
+| Enlace C | 2 | 2  | 160.223.153.8  | /30  | 255.255.252  | 160.223.153.9  | 160.223.153.10  |  160.223.153.11 |
+| Enlace D | 2 | 2  | 160.223.153.12  | /30  | 255.255.252  | 160.223.153.13  | 160.223.153.14  |  160.223.153.15  |
 
 <h3>1) Configuración De Los PCs</h3>
 
@@ -241,14 +241,14 @@ Primero Asignamos las ip a los PCs de cada red:
 * PC 3
 
 ```bash
-ip 141.108.16.2 255.255.255.0 141.108.16.1
+ip 160.223.152.2 255.255.255.0 160.223.152.1
 save 
 show
 ```
 * PC 4
 
 ```bash
-ip 141.108.16.3 255.255.255.0 141.108.16.1
+ip 160.223.152.3 255.255.255.0 160.223.152.1
 save 
 show
 ```
@@ -261,11 +261,11 @@ Para configurar el router 8 ejecute los siguientes comandos en la cónsola del m
 enable
 configure terminal
 interface FastEthernet 0/0
-ip address 141.108.16.1 255.255.255.0
+ip address 160.223.152.1 255.255.255.0
 no shutdown
 exit
 interface fastEthernet 0/1
-ip address 141.108.17.1 255.255.255.252
+ip address 160.223.153.1 255.255.255.252
 no shutdown
 exit
 end
@@ -281,16 +281,16 @@ Para configurar el router 7 ejecute los siguientes comandos en la cónsola del m
 enable
 configure terminal
 interface FastEthernet 0/0
-ip address  141.108.17.5 255.255.255.252
+ip address  160.223.153.14 255.255.255.252
 no shutdown
 exit
 interface fastEthernet 0/1
-ip address  141.108.17.2  255.255.255.252
+ip address  160.223.153.2  255.255.255.252
 no shutdown
 exit
 interface fastEthernet 1/0
 no switchport
-ip address  141.108.17.14 255.255.255.252
+ip address  160.223.153.5 255.255.255.252
 no shutdown
 exit
 end
@@ -305,12 +305,11 @@ Para configurar el router 6 ejecute los siguientes comandos en la cónsola del m
 enable
 configure terminal
 interface FastEthernet 0/0
-ip address  141.108.17.9  255.255.255.252
+ip address 160.223.153.13  255.255.255.252
 no shutdown
 exit
-interface fastEthernet 1/0
-no switchport
-ip address  141.108.17.6 255.255.255.252
+interface fastEthernet 0/1
+ip address 160.223.153.9 255.255.255.252
 no shutdown
 exit
 end
@@ -324,17 +323,18 @@ Para configurar el router 5 ejecute los siguientes comandos en la cónsola del m
 ```bash
 enable
 configure terminal
-interface FastEthernet 0/0
-ip address 141.108.17.10  255.255.255.252
-no shutdown
-exit
-interface fastEthernet 0/1
-ip address 160.223.145.18  255.255.255.252
+interface FastEthernet 0/1
+ip address 160.223.153.10  255.255.255.252
 no shutdown
 exit
 interface fastEthernet 1/0
 no switchport
-ip address 141.108.17.13 255.255.255.252
+ip address 160.223.153.6  255.255.255.252
+no shutdown
+exit
+interface fastEthernet 1/1
+no switchport
+ip address 160.223.145.18 255.255.255.252
 no shutdown
 exit
 end
@@ -351,8 +351,8 @@ Ejecute los siguientes comandos en el enrutador 8
 ```bash
 configure terminal
 router ospf 1
-network 141.108.16.0 0.0.0.255 area 1
-network 141.108.17.0 0.0.0.3 area 0
+network 160.223.152.0 0.0.0.255 area 1
+network 160.223.153.0 0.0.0.3 area 0
 end
 ```
 
@@ -363,9 +363,9 @@ Ejecute los siguientes comandos en el enrutador 7
 ```bash
 configure terminal
 router ospf 1
-network 141.108.17.0 0.0.0.3 area 0
-network 141.108.17.4 0.0.0.3 area 0
-network 141.108.17.12 0.0.0.3 area 0
+network 160.223.153.0 0.0.0.3 area 0
+network 160.223.153.4 0.0.0.3 area 0
+network 160.223.153.12 0.0.0.3 area 0
 end
 ```
 <h3>3.3) Configuración del Enrutador 6</h3>
@@ -375,8 +375,8 @@ Ejecute los siguientes comandos en el enrutador 6
 ```bash
 configure terminal
 router ospf 1
-network 141.108.17.4 0.0.0.3 area 0
-network 141.108.17.8 0.0.0.3 area 0
+network 160.223.153.8 0.0.0.3 area 0
+network 160.223.153.12 0.0.0.3 area 0
 end
 ```
 
@@ -387,9 +387,9 @@ Ejecute los siguientes comandos en el enrutador 5
 ```bash
 configure terminal
 router ospf 1
-network 141.108.17.8 0.0.0.3 area 0
-network 141.108.17.12 0.0.0.3 area 0
-network 160.223.145.16 0.0.0.3 area 0
+network 160.223.153.4 0.0.0.3 area 0
+network 160.223.153.8 0.0.0.3 area 0
+network 160.223.145.16 0.0.0.3 area 2
 end
 ```
 
@@ -433,3 +433,35 @@ end
 wr
 ```
 
+<h2>IPsec</h2>
+
+<h3>Router 4  y 5 </h3>
+
+```bash
+enable
+configure terminal
+crypto isakmp policy 10
+encr aes
+authentication pre-share
+group 2
+exit
+crypto isakmp key Wired address 160.223.145.2
+crypto ipsec transform-set MY_TRANSFORM esp-aes esp-sha-hmac
+crypto map MY_MAP 10 ipsec-isakmp
+set peer 160.223.145.2
+set transform-set MY_TRANSFORM
+match address ACL_TRAFFIC
+exit
+interface fastEthernet 0/1
+crypto map MY_MAP
+
+```
+
+<h4>ACL para tulen Gre</h4>
+
+```bash
+enable 
+configure terminal
+access-list 101 permit gre host 160.223.145.1 host 160.223.145.2
+access-list 101 permit gre host 160.223.145.2 host 160.223.145.1
+```

@@ -37,6 +37,9 @@ También deben configurar el protocolo de enrutamiento dinámico externo, entre 
 
 **Como tenemos una rede con 16 clases C utilizaremos la mitad paracada sistema autonomo.**
 
+
+![](vx_images/578104620288888.png)
+
 <h2>Sistema autonomo 1</h2>
 
 `**Network:**` 160.223.144.0/21
@@ -108,7 +111,6 @@ exit
 interface FastEthernet 1/0
 no switchport
 ip address 160.223.145.5 255.255.255.252
-no switchport
 no shutdown
 exit
 end
@@ -435,33 +437,113 @@ wr
 
 <h2>IPsec</h2>
 
-<h3>Router 4  y 5 </h3>
+<h2> 6) Configuracion IPsec </h2>
+
+<h3>6.1) Configuracion router 1 </h3>
+
+
 
 ```bash
 enable
 configure terminal
+access-list 100 permit ip host 160.223.145.1 host 160.223.145.2
+crypto ipsec transform-set MY_ENCRYP esp-aes esp-sha-hmac
+crypto map WIRED 10 ipsec-isakmp
+set peer 160.223.145.2
+set transform-set MY_ENCRYP
+match address 100
 crypto isakmp policy 10
-encr aes
+encryption aes
+hash sha
 authentication pre-share
 group 2
-exit
-crypto isakmp key Wired address 160.223.145.2
-crypto ipsec transform-set MY_TRANSFORM esp-aes esp-sha-hmac
-crypto map MY_MAP 10 ipsec-isakmp
-set peer 160.223.145.2
-set transform-set MY_TRANSFORM
-match address ACL_TRAFFIC
-exit
+lifetime 86400
+crypto isakmp key PASSWORD address 160.223.145.2
 interface fastEthernet 0/1
-crypto map MY_MAP
-
+crypto map WIRED
+end
 ```
-
-<h4>ACL para tulen Gre</h4>
+<h3>6.2) Configuracion router 2 </h3>
 
 ```bash
-enable 
+enable
 configure terminal
-access-list 101 permit gre host 160.223.145.1 host 160.223.145.2
-access-list 101 permit gre host 160.223.145.2 host 160.223.145.1
+access-list 100 permit ip host 160.223.145.2 host 160.223.145.1
+crypto ipsec transform-set MY_ENCRYP esp-aes esp-sha-hmac
+crypto map WIRED 10 ipsec-isakmp
+set peer 160.223.145.1
+set transform-set MY_ENCRYP
+match address 100
+crypto isakmp policy 10
+encryption aes
+hash sha
+authentication pre-share
+group 2
+lifetime 86400
+crypto isakmp key PASSWORD address 160.223.145.1
+interface fastEthernet 0/1
+crypto map WIRED
 ```
+
+
+
+<h3>6.3) Configuracion router 8 </h3>
+
+
+
+```bash
+enable
+configure terminal
+access-list 100 permit ip host 160.223.153.1 host 160.223.153.2
+crypto ipsec transform-set MY_ENCRYP esp-aes esp-sha-hmac
+crypto map WIRED 10 ipsec-isakmp
+set peer 160.223.153.2
+set transform-set MY_ENCRYP
+match address 100
+crypto isakmp policy 10
+encryption aes
+hash sha
+authentication pre-share
+group 2
+lifetime 86400
+crypto isakmp key PASSWORD address 160.223.153.2
+interface fastEthernet 0/1
+crypto map WIRED
+end
+```
+<h3>6.4) Configuracion router 7 </h3>
+
+```bash
+enable
+configure terminal
+access-list 100 permit ip host 160.223.153.2 host 160.223.153.1
+crypto ipsec transform-set MY_ENCRYP esp-aes esp-sha-hmac
+crypto map WIRED 10 ipsec-isakmp
+set peer 160.223.153.1
+set transform-set MY_ENCRYP
+match address 100
+crypto isakmp policy 10
+encryption aes
+hash sha
+authentication pre-share
+group 2
+lifetime 86400
+crypto isakmp key PASSWORD address 160.223.153.1
+interface fastEthernet 0/1
+crypto map WIRED
+wr
+```
+
+
+* **Puedes usar los siguientes comandos para verificar el estado de la conexión:**
+
+```bash
+show crypto isakmp sa
+show crypto ipsec sa
+```
+
+
+<h2>IPv6</h2>
+
+
+

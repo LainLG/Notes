@@ -7,15 +7,15 @@ $$ 1010010_{(2)} = 82 $$
 
 Para convertir un numero de decimal a binario procedemos dividiendo el numero por dos hasta obtener uno y inveritomos la cadena de residuos obtenida
 
-1. | numero | dividos | residuo |
-1. | ---------- | --------- | ---------- |
-1. | 82         | 2          | 0           |
-1. | 41         | 2          | 1           |
-1. | 20         | 2          | 0           |
-1. | 10         | 2          | 0           |
-1. | 5           | 2          | 1           |
-1. | 2           | 2          | 0           |
-1. | 1           | 2          | 1           |
+| numero | dividos | residuo |
+| ---------- | --------- | ---------- |
+| 82         | 2          | 0           |
+| 41         | 2          | 1           |
+| 20         | 2          | 0           |
+| 10         | 2          | 0           |
+| 5           | 2          | 1           |
+| 2           | 2          | 0           |
+| 1           | 2          | 1           |
 
 
 y luego volteamos el numero

@@ -168,10 +168,8 @@ Una ruta está conformada por los siguientes elementos:
 <ul>
     <li>La dirección de la red destino</li>
     <li>La máscara de la red destino</li>
-    <li>La interfaz de red por donde deben</li>
-    <li>retransmitirse los paquetes</li>
+    <li>La interfaz de red por donde deben retransmitirse los paquetes</li>
     <li>La dirección IP del router adyacente</li>
-    <li>El número de router que hay que atravesar para</li>
-    <li>llegar a la red destino (saltos)</li>
+    <li>El número de router que hay que atravesar para llegar a la red destino (saltos)</li>
 </ul>
 </div>

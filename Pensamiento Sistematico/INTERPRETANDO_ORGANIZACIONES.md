@@ -27,3 +27,11 @@ Tal como lo indica la definición y como lo ilustra la figura 1.2.2, la organiza
 requieren, en última instancia, del concurso de (son responsabilidad de) un grupo de personas que denominamos **actores**. Por otra parte, la realización de dichas actividades requiere de un conjunto de recursos materiales cuya distribución y uso pretenden ser, en principio, lo más económico posible, de modo tal que el objetivo pueda cumplirse al menor costo
 
 ![](vx_images/304052702846406.png)
+
+
+
+### Definicion de poder  Robert Dahl
+
+El poder de una persona A sobre una persona B es la capacidad que
+A tiene para lograr que B haga algo que no hubiera hecho sin la
+intervención de A.

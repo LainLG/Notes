@@ -157,7 +157,7 @@ La noción de sistema será propuesta como una abstracción de los elementos bá
 
 
 <p  style="background-color:#9AB3BF; padding:10px; border-radius: 5px  " >
-El pensamiento sistematico surge como reaccion al pensamiento analitoco reduccionista.
+El pensamiento sistematico surge como reaccion al pensamiento analitico reduccionista.
 <br>
 <strong>El reduccionismo</strong>  <mark>es una dotrina que afirma que todo los objetos y eventos, sus propiedades, nuestra experiencia y el conocimiento de estos,esta constituidas por elementos primarios o partes invicibles <strong>(atomos)</strong> </mark>
 En la ciencia de la eploca anterior todo estaba en terminos reducccionistas:

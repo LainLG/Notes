@@ -30,6 +30,7 @@ La tecnología contemporánea de análisis y almacenamiento de datos permite a l
 Las nuevas tecnologías de la información desafían las leyes de responsabilidad legal y las prácticas sociales existentes para responsabilizar a los individuos e instituciones del daño realizado a otras personas. Aunque los sistemas computacionales han sido fuentes de eficiencia y riqueza, tienen ciertos impactos negativos. Los errores de computadora pueden ocasionar daños graves tanto a los individuos como a las organizaciones. La mala calidad de los datos también es responsable de las interrupciones y pérdidas en las empresas. Se pueden perder empleos cuando las computadoras reemplazan trabajadores o las tareas se hacen innecesarias en los procesos de negocios rediseñados. La capacidad de poseer y usar una computadora puede estar exacerbando discrepancias socioeconómicas entre distintos grupos étnicos y clases sociales. El uso extendido de las computadoras incrementa las oportunidades para cometer delitos por computadora y abuso computacional. Las computadoras también pueden crear problemas de salud, como la lesión por esfuerzo repetitivo, el síndrome de visión de computadora y el tecnoestrés.
 </p>
 
+<hr>
 
 <h2>4.1) ¿QUÉ ASPECTOS ÉTICOS, SOCIALES Y POLÍTICOS GENERAN LOS SISTEMAS DE INFORMACIÓN?</h2>
 
@@ -53,16 +54,16 @@ Otros aspectos éticos urgentes generados por los sistemas de información son: 
 **`TABLA 4.1:` EJEMPLOS RECIENTES DE JUICIOS ÉTICOS FALLIDOS DE GERENTES DE NIVEL SUPERIOR**
 | | |
 |--|--|
-| General Motors Inc. (2014) | El CEO de General Motors admite que la empresa encubrió durante más de una década los interruptores de encendido defectuosos, lo que ocasionó la muerte de al menos 13 clientes. La empresa ha retirado 2.7 millones de autos. |
-| Endo Health Solutions, Inc. (2014) | La empresa farmacéutica Endo Health Solutions Inc. acordó pagar $192.7 millones para resolver la responsabilidad criminal y civil que surgió debido a la comercialización por parte de Endo del medicamento recetado Lidoderm para usos no aprobados como seguros y efectivos por parte de la Administración Nacional de Alimentos y Fármacos (FDA). |
-| SAC Capital (2013) | SAC Capital, un fondo de cobertura dirigido por Steven Cohen, se declaró culpable de cargos por tráfico de información privilegiada y acordó pagar una multa récord de $1,200 millones. La empresa también se vio forzada a dejar el negocio de gestión monetaria. Los corredores individuales de SAC resultaron culpables de cargos criminales y fueron sentenciados a prisión. |
-| Barclays Bank PLC (2012) | Uno de los bancos más grandes del mundo admitió manipular sus propuestas para las tasas de interés de referencia LIBOR con el fin de beneficiar sus posiciones de negociación y la percepción de los medios en cuanto a la salud financiera del banco. Recibió una multa de $160 millones. |
-| GlaxoSmithKline LLC (2012) | El gigante global de servicios médicos admitió una promoción ilegal y criminal de ciertos medicamentos de receta, no haber reportado ciertos datos de seguridad, y su responsabilidad civil por supuestas prácticas de informes de precios falsos. Fue multado con $3 mil millones, la resolución por fraude de servicio médicos más grande en la historia de Estados Unidos y el pago más alto realizado por una empresa farmacéutica. |
-| Walmart Inc. (2012) | Los ejecutivos de Walmart en México fueron acusados de pagar millones de dólares en sobornos a funcionarios mexicanos para recibir permisos de construcción. El Departamento de Justicia mantiene la investigación del caso. |
-| Galleon Group (2011) | El fundador de Galleon Group fue sentenciado a 11 años de cárcel por traficar información privilegiada. Resultó culpable de pagar $250 millones a bancos de Wall Street y obtener a cambio información del mercado que otros inversionistas no recibieron. |
-| Siemens (2009) | La empresa de ingeniería más grande del mundo pagó más de $4 mil millones a las autoridades alemanas y estadounidenses por un esquema de soborno a nivel mundial que duró varias décadas, aprobado por los ejecutivos corporativos para influenciar a los clientes potenciales y a los gobiernos. Los pagos se ocultaron de los sistemas contables que generaban informes normales. |
-| McKinsey & Company (2011) | El CEO Rajat Gupta escuchó cintas que filtraban información privilegiada. El anterior CEO de la prestigiosa empresa de consultoría gerencial McKinsey & Company fue encontrado culpable en 2012 y sentenciado a dos años en prisión. |
-| Bank of America (2012) | Los fiscales federales acusaron a Bank of America y a su afiliado Countrywide Financial de defraudar a las agencias  hipotecarias respaldadas por el gobierno, al generar préstamos a un ritmo rápido sin controles apropiados. Los fiscales solicitan $1 mil millones en multas del banco como compensación por el comportamiento que dicen que obligó a los contribuyentes a garantizar miles de millones en préstamos incobrables. |
+| `General Motors Inc. (2014)` | El CEO de General Motors admite que la empresa encubrió durante más de una década los interruptores de encendido defectuosos, lo que ocasionó la muerte de al menos 13 clientes. La empresa ha retirado 2.7 millones de autos. |
+| `Endo Health Solutions, Inc. (2014)` | La empresa farmacéutica Endo Health Solutions Inc. acordó pagar $192.7 millones para resolver la responsabilidad criminal y civil que surgió debido a la comercialización por parte de Endo del medicamento recetado Lidoderm para usos no aprobados como seguros y efectivos por parte de la Administración Nacional de Alimentos y Fármacos (FDA). |
+| `SAC Capital (2013)` | SAC Capital, un fondo de cobertura dirigido por Steven Cohen, se declaró culpable de cargos por tráfico de información privilegiada y acordó pagar una multa récord de $1,200 millones. La empresa también se vio forzada a dejar el negocio de gestión monetaria. Los corredores individuales de SAC resultaron culpables de cargos criminales y fueron sentenciados a prisión. |
+| `Barclays Bank PLC (2012)` | Uno de los bancos más grandes del mundo admitió manipular sus propuestas para las tasas de interés de referencia LIBOR con el fin de beneficiar sus posiciones de negociación y la percepción de los medios en cuanto a la salud financiera del banco. Recibió una multa de $160 millones. |
+| `GlaxoSmithKline LLC (2012)` | El gigante global de servicios médicos admitió una promoción ilegal y criminal de ciertos medicamentos de receta, no haber reportado ciertos datos de seguridad, y su responsabilidad civil por supuestas prácticas de informes de precios falsos. Fue multado con $3 mil millones, la resolución por fraude de servicio médicos más grande en la historia de Estados Unidos y el pago más alto realizado por una empresa farmacéutica. |
+| `Walmart Inc. (2012)` | Los ejecutivos de Walmart en México fueron acusados de pagar millones de dólares en sobornos a funcionarios mexicanos para recibir permisos de construcción. El Departamento de Justicia mantiene la investigación del caso. |
+| `Galleon Group (2011)` | El fundador de Galleon Group fue sentenciado a 11 años de cárcel por traficar información privilegiada. Resultó culpable de pagar $250 millones a bancos de Wall Street y obtener a cambio información del mercado que otros inversionistas no recibieron. |
+| `Siemens (2009)` | La empresa de ingeniería más grande del mundo pagó más de $4 mil millones a las autoridades alemanas y estadounidenses por un esquema de soborno a nivel mundial que duró varias décadas, aprobado por los ejecutivos corporativos para influenciar a los clientes potenciales y a los gobiernos. Los pagos se ocultaron de los sistemas contables que generaban informes normales. |
+| `McKinsey & Company (2011)` | El CEO Rajat Gupta escuchó cintas que filtraban información privilegiada. El anterior CEO de la prestigiosa empresa de consultoría gerencial McKinsey & Company fue encontrado culpable en 2012 y sentenciado a dos años en prisión. |
+| `Bank of America (2012)` | Los fiscales federales acusaron a Bank of America y a su afiliado Countrywide Financial de defraudar a las agencias  hipotecarias respaldadas por el gobierno, al generar préstamos a un ritmo rápido sin controles apropiados. Los fiscales solicitan $1 mil millones en multas del banco como compensación por el comportamiento que dicen que obligó a los contribuyentes a garantizar miles de millones en préstamos incobrables. |
 
 * <h3>UN MODELO PARA PENSAR EN LOS ASPECTOS ÉTICOS, SOCIALES Y POLÍTICOS</h3>
 
@@ -158,7 +159,7 @@ socialmente responsable significa que quien la usa puede ser y será considerado
 
 * <h3>ANÁLISIS ÉTICO</h3>
 
-<p  style="background-color:#184756; padding:10px; border-radius: 5px ; color:white " >
+<p style="background-color:#DCDCDC; padding:10px; border-radius: 5px  " >
 Al enfrentarse a una situación que parece presentar cuestiones éticas, ¿cómo debería analizarla? El siguiente proceso de cinco pasos le será de utilidad:
 </p>
 <ol>
@@ -192,7 +193,7 @@ Al enfrentarse a una situación que parece presentar cuestiones éticas, ¿cómo
 
 * <h3>PRINCIPIOS ÉTICOS CANDIDATOS</h3>
 
-<p  style="background-color:#184756; padding:10px; border-radius: 5px ; color:white " >
+<p style="background-color:#DCDCDC; padding:10px; border-radius: 5px  " >
 Una vez que ha completado su análisis, ¿qué principios o reglas éticas debe usar para tomar una decisión? ¿Qué valores de orden superior deberían conformar su juicio? Aunque usted sea el único que puede decidir cuál de varios principios éticos seguirá y
 cómo les asignará prioridades, es útil considerar algunos principios éticos con raíces profundas en muchas culturas que han sobrevivido a través de los registros de la historia:
 </p>
@@ -229,15 +230,14 @@ Suponga que casi todos los objetos tangibles e intangibles le pertenecen a algui
     </p>
     </li>
 </ol>
-<p  style="background-color:#184756; padding:10px; border-radius: 5px ; color:white " >
+<p style="background-color:#DCDCDC; padding:10px; border-radius: 5px  " >
 Las acciones que no pasan fácilmente estas reglas merecen una atención estricta y mucha precaución. La aparición del comportamiento no ético puede hacerle tanto daño a usted y su compañía como el comportamiento no ético real.
 </p>
 
 * <h3>CÓDIGOS PROFESIONALES DE CONDUCTA</h3>
 
 <p  style="background-color:#184756; padding:10px; border-radius: 5px ; color:white " >
-Cuando grupos de personas afirman ser profesionales, adquieren derechos y obligaciones especiales debido a sus afirmaciones especiales de conocimiento, sabiduría y respeto. Los códigos profesionales de conducta los promulgan asociaciones de profe-
-sionales como la Asociación médica estadounidense (AMA), el Colegio estadounidense de abogados (ABA), la Asociación de profesionales en tecnología de la información (AITP) y la Asociación de maquinaria computacional (ACM). Estos grupos profesionales asumen la responsabilidad de regular en forma parcial sus profesiones al determinar los requisitos de entrada y la competencia. Los códigos de ética son promesas que hacen las profesiones de regularse a sí mismas en el interés general de la sociedad. Por ejemplo, evitar dañar a otros, honrar los derechos de propiedad (entre ellos la propiedad intelectual) y respetar la privacidad, son algunos de los imperativos morales generales del Código de ética y conducta profesional de la ACM.
+Cuando grupos de personas afirman ser profesionales, adquieren derechos y obligaciones especiales debido a sus afirmaciones especiales de conocimiento, sabiduría y respeto. Los códigos profesionales de conducta los promulgan asociaciones de profesionales como la Asociación médica estadounidense (AMA), el Colegio estadounidense de abogados (ABA), la Asociación de profesionales en tecnología de la información (AITP) y la Asociación de maquinaria computacional (ACM). Estos grupos profesionales asumen la responsabilidad de regular en forma parcial sus profesiones al determinar los requisitos de entrada y la competencia. Los códigos de ética son promesas que hacen las profesiones de regularse a sí mismas en el interés general de la sociedad. Por ejemplo, evitar dañar a otros, honrar los derechos de propiedad (entre ellos la propiedad intelectual) y respetar la privacidad, son algunos de los imperativos morales generales del Código de ética y conducta profesional de la ACM.
 </p>
 
 * <h3>ALGUNOS DILEMAS ÉTICOS DEL MUNDO REAL</h3>
@@ -265,7 +265,7 @@ El derecho a la privacidad está protegido en las constituciones de Estados Unid
 
 **`TABLA 4.3:` LEYES FEDERALES DE PRIVACIDAD EN ESTADOS UNIDOS**
 
-|                LEYES FEDERALES GENERALES DE PRIVACIDA                 |                                                                                                               DLEYES DE PRIVACIDAD QUE AFECTAN A LAS INSTITUCIONES PRIVADAS                                                                                                               |
+|               LEYES FEDERALES GENERALES DE PRIVACIDAD               |                                                                                                                LEYES DE PRIVACIDAD QUE AFECTAN A LAS INSTITUCIONES PRIVADAS                                                                                                                |
 | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Ley de libertad de información,1966, enmendada (5 USC 552)                | Ley de informes imparciales de crédito, 1970                                                                                                                                                                                                                                                                                     |
 | Ley de privacidad, 1974, enmendada (5 USC 552a)                                 | Ley de derechos educativos y privacidad de la familia, 1974                                                                                                                                                                                                                                                             |
@@ -388,15 +388,13 @@ A mediados de la década de 1960, la Oficina de derechos de autor empezó a regi
 Las demandas por infracción de los derechos de autor en cuanto a la “apariencia visual” tratan precisamente sobre la distinción entre una idea y su expresión. Por ejemplo, a principios de la década de 1990, Apple Computer demandó a Microsoft Corporation y a Hewlett-Packard por infringir los derechos de la expresión de la interfaz de la Apple Macintosh, pues afirmaban que los acusados habían copiado la expresión de las ventanas que se traslapaban. Los acusados respondieron que la idea de ventanas que
 se traslapan sólo se puede expresar de una manera y, por lo tanto, no se podía proteger bajo la doctrina que establece que la idea se funde con la obra (merger doctrine) de la ley de los derechos de autor. Cuando se funden las ideas y su expresión, la expresión no se puede proteger por derechos de autor.
 <br>
-Al parecer los juzgados siguen el razonamiento de un caso de 1989 (Brown Bag Software vs. Symantec Corp.) en el cual el juzgado diseccionó los supuestos elementos de software infractores. El juzgado dictaminó que el concepto, la función, las caracte-
-rísticas funcionales generales (por ejemplo, los menús desplegables) y los colores similares no se pueden proteger por la ley de los derechos de autor (Brown Bag Software vs. Symantec Corp., 1992).
+Al parecer los juzgados siguen el razonamiento de un caso de 1989 (Brown Bag Software vs. Symantec Corp.) en el cual el juzgado diseccionó los supuestos elementos de software infractores. El juzgado dictaminó que el concepto, la función, las características funcionales generales (por ejemplo, los menús desplegables) y los colores similares no se pueden proteger por la ley de los derechos de autor (Brown Bag Software vs. Symantec Corp., 1992).
 </p>
     </li>
     <li>
 <h4>Patentes</h4>
 <p style="background-color:#DFFCFF; padding:10px; border-radius: 5px  " >
-Una patente otorga al propietario un monopolio exclusivo durante 20 años sobre las ideas detrás de una invención. La intención del congreso con respecto a la ley de patentes era asegurar que los inventores de nuevas máquinas, dispositivos o métodos reci-
-bieran las recompensas financieras completas junto con otras recompensas adicionales por su trabajo, y que al mismo tiempo fuera posible un uso extendido de la invención al proporcionar diagramas detallados para quienes desearan usar la idea bajo licencia del propietario de la patente. La Oficina de patentes y marcas registradas de Estados Unidos otorga las patentes y se basa en las resoluciones de los juzgados.
+Una patente otorga al propietario un monopolio exclusivo durante 20 años sobre las ideas detrás de una invención. La intención del congreso con respecto a la ley de patentes era asegurar que los inventores de nuevas máquinas, dispositivos o métodos recibieran las recompensas financieras completas junto con otras recompensas adicionales por su trabajo, y que al mismo tiempo fuera posible un uso extendido de la invención al proporcionar diagramas detallados para quienes desearan usar la idea bajo licencia del propietario de la patente. La Oficina de patentes y marcas registradas de Estados Unidos otorga las patentes y se basa en las resoluciones de los juzgados.
 <br>
 Los conceptos clave en la ley de patentes son originalidad, novedad e invención. La Oficina de patentes no solía aceptar las solicitudes de patentes de software sino hasta una decisión de la Suprema Corte en 1981, la cual declaró que los programas de computadora podían ser parte de un proceso patentable. A partir de entonces se han otorgado cientos de patentes y miles están en espera de ser consideradas.
 <br>
@@ -404,7 +402,7 @@ La solidez de la protección de las patentes es que concede un monopolio sobre l
 <br>
 En lo que algunos denominan el juicio sobre patentes del siglo, en 2011, Apple demandó a Samsung por violar las patentes de sus dispositivos iPhone, iPad y iPod. El 24 de agosto de 2012, un jurado de California en un tribunal de distrito federal concedió una victoria decisiva para Apple y una impactante derrota para Samsung. El jurado otorgó a Apple $1 mil millones por daños. La decisión fincó criterios para determinar qué tan cerca puede llegar un competidor de un producto que establece las normas y es líder en la industria, como el iPhone de Apple, antes de violar las patentes de diseño y utilidad de la empresa líder. El mismo tribunal dictó que Samsung no podía vender su nueva computadora tablet (Galaxy 10.1) en Estados Unidos. En una posterior disputa sobre patentes, Samsung ganó un caso de infracción contra Apple. En junio de 2013, la Comisión de Comercio Internacional de Estados Unidos dictó una prohibición para varios dispositivos iPhone y iPad anteriores, debido a que violaban las patentes de Samsung de años atrás. En 2014 Apple demandó de nuevo a Samsung, reclamando la infracción de cinco patentes relacionadas con las técnicas de hardware y software para manejar fotografías, videos y listas utilizadas en el popular Galaxy 5. Apple pretende obtener $2 mil millones por daños.
 <br>
-Para complicar aún más las cosas, Apple ha sido uno de los mayores clientes de Samsung en cuanto a procesadores de memoria flash, chips de gráficos, unidades de estado sólido y piezas de pantalla que se usan en los dispositivos iPhone, iPad y iPod Touch de Apple, además de las computadoras MacBook. Los casos de las patentes de Samsung y Apple in- dican las complejas relaciones entre las principales empresas de cómputo.
+Para complicar aún más las cosas, Apple ha sido uno de los mayores clientes de Samsung en cuanto a procesadores de memoria flash, chips de gráficos, unidades de estado sólido y piezas de pantalla que se usan en los dispositivos iPhone, iPad y iPod Touch de Apple, además de las computadoras MacBook. Los casos de las patentes de Samsung y Apple indican las complejas relaciones entre las principales empresas de cómputo.
 </p>
     </li>
     <li>

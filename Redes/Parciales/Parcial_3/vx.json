@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "created_time": "2024-06-26T01:07:37Z",
     "files": [
         {
@@ -8,14 +9,41 @@
             "modified_time": "2024-06-26T01:07:37Z",
             "name": "Servidor.md",
             "signature": "2424881375321221593",
+=======
+    "created_time": "2024-06-25T00:19:08Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "created_time": "2024-06-25T00:19:08Z",
+            "id": "52",
+            "modified_time": "2024-06-25T00:19:08Z",
+            "name": "Servidor.md",
+            "signature": "2424881375321132284",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2024-06-25T00:19:19Z",
+            "id": "67",
+            "modified_time": "2024-06-25T02:47:46Z",
+            "name": "DNS.md",
+            "signature": "6022850194431413511",
+>>>>>>> 52bddcb2ac5228a3d15e4450004f5833332ab23b
             "tags": [
             ]
         }
     ],
     "folders": [
     ],
+<<<<<<< HEAD
     "id": "52",
     "modified_time": "2024-06-26T01:07:37Z",
     "signature": "3670979438045784537",
+=======
+    "id": "51",
+    "modified_time": "2024-06-25T00:19:08Z",
+    "signature": "3670979438045695228",
+>>>>>>> 52bddcb2ac5228a3d15e4450004f5833332ab23b
     "version": 3
 }

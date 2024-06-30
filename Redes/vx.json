@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "created_time": "2024-06-26T01:07:37Z",
+=======
+    "created_time": "2024-06-25T00:19:08Z",
+>>>>>>> 52bddcb2ac5228a3d15e4450004f5833332ab23b
     "files": [
     ],
     "folders": [
@@ -16,8 +20,14 @@
             "name": "Talleres"
         }
     ],
+<<<<<<< HEAD
     "id": "45",
     "modified_time": "2024-06-26T01:07:37Z",
     "signature": "207324085709273",
+=======
+    "id": "44",
+    "modified_time": "2024-06-25T00:19:08Z",
+    "signature": "207324085619964",
+>>>>>>> 52bddcb2ac5228a3d15e4450004f5833332ab23b
     "version": 3
 }

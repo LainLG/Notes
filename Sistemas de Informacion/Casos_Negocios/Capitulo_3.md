@@ -1,9 +1,9 @@
 <h1>CASOS DE NEGOCIOS CAPITULO 3: </h1>
 
-* ¿DEBE T.J. Maxx VENDER EN LÍNEA?
-* NIKE SE CONVIERTE EN UNA EMPRESA TECNOLÓGICA
-* IDENTIFICACIÓN DE LOS NICHOS DEL MERCADO EN LA ERA DE BIG DATA
-* ¿Quién es el mejor vendedor minorista del mundo? Walmart y Amazon lo resuelven
+* **¿DEBE T.J. Maxx VENDER EN LÍNEA?**
+* **NIKE SE CONVIERTE EN UNA EMPRESA TECNOLÓGICA**
+* **IDENTIFICACIÓN DE LOS NICHOS DEL MERCADO EN LA ERA DE BIG DATA**
+* **¿Quién es el mejor vendedor minorista del mundo? Walmart y Amazon lo resuelven**
 
 
 

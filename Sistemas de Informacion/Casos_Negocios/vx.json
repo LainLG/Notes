@@ -1,48 +1,31 @@
 {
-<<<<<<< HEAD
-    "created_time": "2024-06-26T01:07:51Z",
+    "created_time": "2024-06-30T20:57:34Z",
     "files": [
         {
             "attachment_folder": "",
-            "created_time": "2024-06-26T01:07:51Z",
-            "id": "24",
-            "modified_time": "2024-06-26T01:07:51Z",
+            "created_time": "2024-06-30T20:57:34Z",
+            "id": "33",
+            "modified_time": "2024-06-30T20:57:34Z",
             "name": "Capitulo_3.md",
-            "signature": "2711912562244151783",
-=======
-    "created_time": "2024-06-29T15:22:23Z",
-    "files": [
-        {
-            "attachment_folder": "",
-            "created_time": "2024-06-29T15:22:23Z",
-            "id": "24",
-            "modified_time": "2024-06-29T20:04:49Z",
-            "name": "Capitulo_3.md",
-            "signature": "1749579338044417711",
+            "signature": "4749813615790507710",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
-            "created_time": "2024-06-29T20:04:14Z",
-            "id": "28",
-            "modified_time": "2024-06-30T17:40:20Z",
+            "created_time": "2024-06-30T20:57:34Z",
+            "id": "34",
+            "modified_time": "2024-06-30T20:57:34Z",
             "name": "Capitulo_4.md",
-            "signature": "784285915009804478",
->>>>>>> 52bddcb2ac5228a3d15e4450004f5833332ab23b
+            "signature": "3670979438046201534",
             "tags": [
             ]
         }
     ],
     "folders": [
     ],
-    "id": "23",
-<<<<<<< HEAD
-    "modified_time": "2024-06-26T01:07:51Z",
-    "signature": "8364164805966916071",
-=======
-    "modified_time": "2024-06-29T15:22:23Z",
-    "signature": "8927815552022357679",
->>>>>>> 52bddcb2ac5228a3d15e4450004f5833332ab23b
+    "id": "32",
+    "modified_time": "2024-06-30T20:57:34Z",
+    "signature": "1749579338044524222",
     "version": 3
 }

@@ -68,24 +68,25 @@ Este comando te muestra un resumen del estado de BGP, incluyendo la lista de vec
 
 ```bash
 show ip bgp summary
+# Para IPv6
+show bgp ipv6 unicast
+show bgp ipv6 unicast summary
 ```
 <hr>
 
 
 ### Implementacion en IPv6
 
-- `configure terminal`: Este comando no cambia.
-
-- `router bgp 100`: Este comando tampoco cambia, ya que defines el AS de la misma manera para IPv4 e IPv6.
-
-- `neighbor 160.223.145.18 remote-as 200`: Deberías reemplazar la dirección IPv4 con la dirección IPv6 del vecino y agregar el comando `address-family ipv6` antes de definir al vecino para especificar que estás configurando BGP para IPv6.
-
-- `redistribute ospf 1`: Este comando se mantiene igual, pero asegúrate de que OSPF esté configurado para soportar IPv6 con OSPFv3.
-
-- `router ospf 1`: Similar al anterior, si estás utilizando OSPFv3 para IPv6, este comando sería `router ospfv3 1`.
-
-- `redistribute bgp 100 subnets`: Este comando también se mantiene, pero asegúrate de que esté dentro del contexto de la familia de direcciones correcta para IPv6.
-
-- `end`: No hay cambios en este comando.
-
-- `wr`: No hay cambios en este comando.
+- `router bgp 100:` Este comando configura el proceso BGP (Border Gateway Protocol) en el router con el número de sistema autónomo (AS) 100.
+- `address-family ipv6:` Aquí se especifica que estamos trabajando con direcciones IPv6 en el contexto del BGP.
+- `redistribute connected metric 1:` Este comando redistribuye las rutas conectadas (interfaces directamente conectadas) en el proceso BGP con una métrica de 1.
+- `neighbor FEC0:242:0:6::2 remote-as 200:` Define un vecino BGP con la dirección IPv6 FEC0:242:0:6::2 y el número de sistema autónomo (AS) 200.
+- `neighbor FEC0:242:0:6::2 activate:` Activa la relación BGP con el vecino especificado.
+- `redistribute ospf 1:` Redistribuye las rutas aprendidas a través del protocolo OSPF (Open Shortest Path First) en el proceso BGP.
+- `exit-address-family:` Sale del contexto de la familia de direcciones IPv6.
+- `exit:` Sale del modo de configuración BGP.
+- `ipv6 router ospf 1:` Configura el proceso OSPF con el número de proceso 1 para IPv6.
+- `redistribute bgp 100 metric-type 1:` Redistribuye las rutas aprendidas a través del BGP en el proceso OSPF con una métrica tipo 1.
+- `redistribute connected metric-type 1:` Redistribuye las rutas conectadas en el proceso OSPF con una métrica tipo 1.
+- `end:` Finaliza la configuración.
+- `wr:` Guarda la configuración en la memoria permanente (equivalente a write memory).

@@ -225,7 +225,7 @@ show ip route
 
 <h2> Sistema autonomo 2 </h2>
 
-`**Network:**` 160.223.152.0/21
+**`Network:`** 160.223.152.0/21
 
  | Red  | Solicitud de Host  | Host Encontrados  | Direccion de Red  | Mask  | Mascara  | Primera IP utilizable  | Ultima IP utilizable  | Direccion de Broadcast |
 |---|---|---|---|---|---|---|---|---|
@@ -400,6 +400,7 @@ Para verificar el funcionamiento de la topología y la creación de las rutas di
 
 ```bash
 show ip ospf
+show ip ospf neighbor
 show ip route
 ```
 <h3>
@@ -446,7 +447,7 @@ wr
 ```bash
 enable
 configure terminal
-access-list 100 permit ip host 160.223.145.1 host 160.223.145.2
+access-list 100 permit ip any any
 crypto ipsec transform-set MY_ENCRYP esp-aes esp-sha-hmac
 crypto map WIRED 10 ipsec-isakmp
 set peer 160.223.145.2
@@ -468,7 +469,7 @@ end
 ```bash
 enable
 configure terminal
-access-list 100 permit ip host 160.223.145.2 host 160.223.145.1
+access-list 100 permit ip any any
 crypto ipsec transform-set MY_ENCRYP esp-aes esp-sha-hmac
 crypto map WIRED 10 ipsec-isakmp
 set peer 160.223.145.1
@@ -494,7 +495,7 @@ crypto map WIRED
 ```bash
 enable
 configure terminal
-access-list 100 permit ip host 160.223.153.1 host 160.223.153.2
+access-list 100 permit ip any any
 crypto ipsec transform-set MY_ENCRYP esp-aes esp-sha-hmac
 crypto map WIRED 10 ipsec-isakmp
 set peer 160.223.153.2
@@ -516,7 +517,7 @@ end
 ```bash
 enable
 configure terminal
-access-list 100 permit ip host 160.223.153.2 host 160.223.153.1
+access-list 100 permit ip any any
 crypto ipsec transform-set MY_ENCRYP esp-aes esp-sha-hmac
 crypto map WIRED 10 ipsec-isakmp
 set peer 160.223.153.1
@@ -543,7 +544,471 @@ show crypto ipsec sa
 ```
 
 
-<h2>IPv6</h2>
+<h1>IPv6</h1>
 
 
+<h2> Sistema autonomo 2 </h2>
 
+**`Network:`**  FEC0:242::::/64
+
+
+<h3>1) Configuración De Los PCs</h3>
+
+
+Primero Asignamos las ip a los PCs de cada red:
+
+* PC 1
+
+```bash
+ip FEC0:242:0:1::2/64 FEC0:242:0:1::1
+save 
+show
+```
+* PC 2
+
+```bash
+ip FEC0:242:0:1::3/64 FEC0:242:0:1::1
+save 
+show
+```
+<h3>2.1) Configuración Del Enrutador 1</h3>
+
+Para configurar el router 1 ejecute los siguientes comandos en la cónsola del mismo
+
+```bash
+enable
+configure terminal
+interface FastEthernet 0/0
+ipv6 address FEC0:242:0:1::1/64
+Ipv6 enable
+no shutdown
+exit
+interface fastEthernet 0/1
+ipv6 address FEC0:242:0:2::1/64
+Ipv6 enable
+no shutdown
+exit
+end
+wr
+show ipv6 interface brief
+```
+
+<h3>2.2) Configuración Del Enrutador 2</h3>
+
+Para configurar el router 2 ejecute los siguientes comandos en la cónsola del mismo
+
+```bash
+enable
+configure terminal
+interface fastEthernet 0/0
+ipv6 address FEC0:242:0:5::2/64
+Ipv6 enable
+no shutdown
+exit
+interface fastEthernet 0/1
+ipv6 address FEC0:242:0:2::2/64
+Ipv6 enable
+no shutdown
+exit
+interface FastEthernet 1/0
+no switchport
+ipv6 address FEC0:242:0:3::1/64
+Ipv6 enable
+no shutdown
+exit
+end
+wr
+show ipv6 interface brief
+```
+
+<h3>2.3) Configuración Del Enrutador 3</h3>
+
+Para configurar el router 3 ejecute los siguientes comandos en la cónsola del mismo
+
+```bash
+enable
+configure terminal
+interface fastEthernet 0/1
+ipv6 address FEC0:242:0:4::1/64
+Ipv6 enable
+no shutdown
+exit
+interface FastEthernet 1/0
+no switchport
+ipv6 address FEC0:242:0:3::2/64
+Ipv6 enable
+no shutdown
+exit
+end
+wr
+show ipv6 interface brief
+```
+
+<h3>2.4) Configuración Del Enrutador 4</h3>
+
+Para configurar el router 4 ejecute los siguientes comandos en la cónsola del mismo
+
+```bash
+enable
+configure terminal
+interface fastEthernet 0/0
+ipv6 address FEC0:242:0:5::1/64
+Ipv6 enable
+no shutdown
+exit
+interface fastEthernet 0/1
+ipv6 address FEC0:242:0:4::2/64
+Ipv6 enable
+no shutdown
+exit
+interface FastEthernet 1/1
+no switchport
+ipv6 address FEC0:242:0:6::1/64
+Ipv6 enable
+no shutdown
+exit
+end
+wr
+show ipv6 interface brief
+```
+<h3>3) Configuracion del OSPF</h3>
+
+<h3>3.1) Configuracion del enrutador 1</h3>
+
+Ejecute los siguientes comandos en el enrutador 1
+
+```bash
+configure terminal
+ipv6 unicast-routing
+ipv6 cef
+ipv6 router ospf 1
+router-id 1.1.1.1
+interface fastethernet 0/0
+ipv6 ospf 1 area 1
+exit
+interface fastethernet 0/1
+ipv6 ospf 1 area 0
+exit
+wr
+```
+
+<h3>3.2) Configuracion del enrutador 2</h3>
+
+Ejecute los siguientes comandos en el enrutador 2
+
+```bash
+configure terminal
+ipv6 unicast-routing
+ipv6 cef
+ipv6 router ospf 1
+router-id 2.2.2.2
+interface fastethernet 0/0
+ipv6 ospf 1 area 0
+exit
+interface fastethernet 0/1
+ipv6 ospf 1 area 0
+exit
+interface fastethernet 1/0
+ipv6 ospf 1 area 0
+exit
+wr
+```
+
+<h3>3.3) Configuracion del enrutador 3</h3>
+
+Ejecute los siguientes comandos en el enrutador 3
+
+```bash
+configure terminal
+ipv6 unicast-routing
+ipv6 cef
+ipv6 router ospf 1
+router-id 3.3.3.3
+interface fastethernet 0/1
+ipv6 ospf 1 area 0
+exit
+interface fastethernet 1/0
+ipv6 ospf 1 area 0
+exit
+wr
+```
+
+<h3>3.4) Configuracion del enrutador 4</h3>
+
+Ejecute los siguientes comandos en el enrutador 4
+
+```bash
+configure terminal
+ipv6 unicast-routing
+ipv6 cef
+ipv6 router ospf 1
+router-id 4.4.4.4
+interface fastethernet 0/0
+ipv6 ospf 1 area 0
+exit
+interface fastethernet 0/1
+ipv6 ospf 1 area 0
+exit
+interface fastethernet 1/1
+ipv6 ospf 1 area 2
+exit
+wr
+```
+
+<h2> Sistema autonomo 2 </h2>
+
+**`Network:`**  FEC0:243::::/64
+
+<h3>1) Configuración De Los PCs</h3>
+
+
+Primero Asignamos las ip a los PCs de cada red:
+
+* PC 3
+
+```bash
+ip FEC0:243:0:1::2/64 FEC0:243:0:1::1
+save 
+show
+```
+* PC 4
+
+```bash
+ip FEC0:243:0:1::3/64 FEC0:243:0:1::1
+save 
+show
+```
+<h3>2.1) Configuración Del Enrutador 8</h3>
+
+Para configurar el router 8 ejecute los siguientes comandos en la cónsola del mismo
+
+```bash
+enable
+configure terminal
+interface FastEthernet 0/0
+ipv6 address FEC0:243:0:1::1/64
+Ipv6 enable
+no shutdown
+exit
+interface fastEthernet 0/1
+ipv6 address FEC0:243:0:2::1/64
+Ipv6 enable
+no shutdown
+exit
+end
+wr
+show ipv6 interface brief
+```
+
+<h3>2.2) Configuración Del Enrutador 7</h3>
+
+Para configurar el router 7 ejecute los siguientes comandos en la cónsola del mismo
+
+```bash
+enable
+configure terminal
+interface fastEthernet 0/0
+ipv6 address FEC0:243:0:5::2/64
+Ipv6 enable
+no shutdown
+exit
+interface fastEthernet 0/1
+ipv6 address FEC0:243:0:2::2/64
+Ipv6 enable
+no shutdown
+exit
+interface FastEthernet 1/0
+no switchport
+ipv6 address FEC0:243:0:3::1/64
+Ipv6 enable
+no shutdown
+end
+wr
+show ipv6 interface brief
+```
+
+<h3>2.3) Configuración Del Enrutador 6</h3>
+
+Para configurar el router 6 ejecute los siguientes comandos en la cónsola del mismo
+
+```bash
+enable
+configure terminal
+interface fastEthernet 0/0
+ipv6 address FEC0:243:0:5::1/64
+Ipv6 enable
+no shutdown
+exit
+interface FastEthernet 0/1
+ipv6 address FEC0:243:0:4::2/64
+Ipv6 enable
+no shutdown
+end
+wr
+show ipv6 interface brief
+```
+
+<h3>2.4) Configuración Del Enrutador 5</h3>
+
+Para configurar el router 5 ejecute los siguientes comandos en la cónsola del mismo
+
+```bash
+enable
+configure terminal
+interface fastEthernet 0/1
+ipv6 address FEC0:243:0:4::1/64
+Ipv6 enable
+no shutdown
+exit
+interface fastEthernet 1/0
+no switchport
+ipv6 address FEC0:243:0:3::2/64
+Ipv6 enable
+no shutdown
+exit
+interface FastEthernet 1/1
+no switchport
+ipv6 address FEC0:242:0:6::2/64
+Ipv6 enable
+no shutdown
+exit
+end
+wr
+show ipv6 interface brief
+```
+
+<h3>3) Configuracion del OSPF</h3>
+
+<h3>3.1) Configuracion del enrutador 8</h3>
+
+Ejecute los siguientes comandos en el enrutador 8
+
+```bash
+configure terminal
+ipv6 unicast-routing
+ipv6 cef
+ipv6 router ospf 1
+router-id 8.8.8.8
+interface fastethernet 0/0
+ipv6 ospf 1 area 1
+exit
+interface fastethernet 0/1
+ipv6 ospf 1 area 0
+exit
+wr
+```
+
+<h3>3.2) Configuracion del enrutador 7</h3>
+
+Ejecute los siguientes comandos en el enrutador 7
+
+```bash
+configure terminal
+ipv6 unicast-routing
+ipv6 cef
+ipv6 router ospf 1
+router-id 7.7.7.7
+interface fastethernet 0/0
+ipv6 ospf 1 area 0
+exit
+interface fastethernet 0/1
+ipv6 ospf 1 area 0
+exit
+interface fastethernet 1/0
+ipv6 ospf 1 area 0
+exit
+wr
+```
+
+<h3>3.3) Configuracion del enrutador 6</h3>
+
+Ejecute los siguientes comandos en el enrutador 6
+
+```bash
+configure terminal
+ipv6 unicast-routing
+ipv6 cef
+ipv6 router ospf 1
+router-id 6.6.6.6
+interface fastethernet 0/0
+ipv6 ospf 1 area 0
+exit
+interface fastethernet 0/1
+ipv6 ospf 1 area 0
+exit
+wr
+```
+
+<h3>3.4) Configuracion del enrutador 5</h3>
+
+Ejecute los siguientes comandos en el enrutador 5
+
+```bash
+configure terminal
+ipv6 unicast-routing
+ipv6 cef
+ipv6 router ospf 1
+router-id 5.5.5.5
+interface fastethernet 0/1
+ipv6 ospf 1 area 0
+exit
+interface fastethernet 1/0
+ipv6 ospf 1 area 0
+exit
+interface fastethernet 1/1
+ipv6 ospf 1 area 2
+exit
+wr
+```
+
+<h3> 4) Verificación de las conexiones </h3>
+Para verificar el funcionamiento de la topología y la creación de las rutas dinámicas podemos ejecutar los siguientes comandos
+
+```bash
+show ipv6 ospf
+show ipv6 ospf neighbor
+show ipv6 route
+```
+
+<h2> 5) Configuracion del BGP </h2>
+
+<h3>5.1) Configuracion router 4 </h3>
+
+Ejecute los siguientes comandos en el enrutador 4
+
+```bash
+configure terminal
+router bgp 100
+address-family ipv6
+redistribute connected metric 1
+neighbor FEC0:242:0:6::2 remote-as 200
+neighbor FEC0:242:0:6::2 activate
+redistribute ospf 1
+exit-address-family
+exit
+ipv6 router ospf 1
+redistribute bgp 100 metric-type 1
+redistribute connected metric-type 1
+end
+wr
+```
+<h3>5.2) Configuracion router 5 </h3>
+
+Ejecute los siguientes comandos en el enrutador 5
+
+```bash
+configure terminal
+router bgp 200
+address-family ipv6
+redistribute connected metric 1
+neighbor FEC0:242:0:6::1 remote-as 100
+neighbor FEC0:242:0:6::1 activate
+redistribute ospf 1
+exit-address-family
+exit
+ipv6 router ospf 1
+redistribute bgp 200 metric-type 1
+redistribute connected metric-type 1
+end
+wr
+```

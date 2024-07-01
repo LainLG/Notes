@@ -1,99 +1,53 @@
 {
-<<<<<<< HEAD
-    "created_time": "2024-06-26T01:07:51Z",
+    "created_time": "2024-06-30T20:57:34Z",
     "files": [
         {
             "attachment_folder": "",
-            "created_time": "2024-06-26T01:07:51Z",
-            "id": "20",
-            "modified_time": "2024-06-26T01:07:51Z",
+            "created_time": "2024-06-30T20:57:34Z",
+            "id": "28",
+            "modified_time": "2024-06-30T20:57:34Z",
             "name": "Capitulo_1.md",
-            "signature": "8868577589254121959",
-=======
-    "created_time": "2024-06-29T20:46:10Z",
-    "files": [
+            "signature": "784285915009894078",
+            "tags": [
+            ]
+        },
         {
             "attachment_folder": "",
-            "created_time": "2024-06-29T20:46:10Z",
+            "created_time": "2024-06-30T20:57:34Z",
+            "id": "29",
+            "modified_time": "2024-06-30T20:57:34Z",
+            "name": "Capitulo_2.md",
+            "signature": "5546498803311429310",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2024-06-30T20:57:34Z",
             "id": "30",
-            "modified_time": "2024-06-29T20:46:10Z",
-            "name": "Capitulo_1.md",
-            "signature": "784285915009806994",
->>>>>>> 52bddcb2ac5228a3d15e4450004f5833332ab23b
+            "modified_time": "2024-06-30T20:57:34Z",
+            "name": "Capitulo_3.md",
+            "signature": "8223662518611068606",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
-<<<<<<< HEAD
-            "created_time": "2024-06-26T01:07:51Z",
-            "id": "21",
-            "modified_time": "2024-06-26T01:07:51Z",
-            "name": "Capitulo_2.md",
-            "signature": "1519208661065099751",
-=======
-            "created_time": "2024-06-29T20:46:10Z",
+            "created_time": "2024-06-30T20:57:34Z",
             "id": "31",
-            "modified_time": "2024-06-29T20:46:10Z",
-            "name": "Capitulo_2.md",
-            "signature": "5546498803311342226",
->>>>>>> 52bddcb2ac5228a3d15e4450004f5833332ab23b
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-<<<<<<< HEAD
-            "created_time": "2024-06-26T01:07:51Z",
-            "id": "22",
-            "modified_time": "2024-06-26T01:07:51Z",
-            "name": "Capitulo_3.md",
-            "signature": "7913536429248702951",
-=======
-            "created_time": "2024-06-29T20:46:10Z",
-            "id": "32",
-            "modified_time": "2024-06-29T20:46:10Z",
-            "name": "Capitulo_3.md",
-            "signature": "8223662518610981522",
->>>>>>> 52bddcb2ac5228a3d15e4450004f5833332ab23b
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-<<<<<<< HEAD
-            "created_time": "2024-06-26T01:07:51Z",
-            "id": "25",
-            "modified_time": "2024-06-26T01:07:51Z",
-            "name": "Preguntas.md",
-            "signature": "8635323004944607719",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2024-06-26T01:07:51Z",
-            "id": "26",
-            "modified_time": "2024-06-26T01:07:51Z",
-            "name": "preguntas_3.md",
-            "signature": "3824421212029413863",
-=======
-            "created_time": "2024-06-29T20:46:10Z",
-            "id": "33",
-            "modified_time": "2024-06-29T22:20:24Z",
+            "modified_time": "2024-06-30T20:57:34Z",
             "name": "Capitulo_4.md",
-            "signature": "8927815552022377106",
+            "signature": "8927815552022464190",
             "tags": [
             ]
         },
         {
             "attachment_folder": "",
-            "created_time": "2024-06-29T20:46:10Z",
-            "id": "37",
-            "modified_time": "2024-06-29T20:46:10Z",
+            "created_time": "2024-06-30T20:57:34Z",
+            "id": "35",
+            "modified_time": "2024-06-30T20:57:34Z",
             "name": "Preguntas.md",
-            "signature": "2424881375321551506",
->>>>>>> 52bddcb2ac5228a3d15e4450004f5833332ab23b
+            "signature": "2424881375321638590",
             "tags": [
             ]
         }
@@ -103,14 +57,8 @@
             "name": "Casos_Negocios"
         }
     ],
-<<<<<<< HEAD
-    "id": "19",
-    "modified_time": "2024-06-26T01:07:51Z",
-    "signature": "8315186124204763623",
-=======
-    "id": "29",
-    "modified_time": "2024-06-29T20:46:10Z",
-    "signature": "207324086039186",
->>>>>>> 52bddcb2ac5228a3d15e4450004f5833332ab23b
+    "id": "27",
+    "modified_time": "2024-06-30T20:57:34Z",
+    "signature": "207324086126270",
     "version": 3
 }

@@ -27,7 +27,7 @@ IPsec es una parte esencial de la seguridad en redes modernas, protegiendo la co
 
 - `enable`: Entra al modo EXEC privilegiado.
 - `configure terminal`: Accede al modo de configuración global.
-- `access-list 100 permit ip host 160.223.145.1 host 160.223.145.2`: Permite tráfico IP entre dos hosts específicos.
+- `access-list 100 permit ip any any`: Permite tráfico IP que pasa por las interfaces definiadas.
 - `crypto ipsec transform-set MY_ENCRYP esp-aes esp-sha-hmac`: Define un conjunto de transformaciones para IPsec.
 - `crypto map WIRED 10 ipsec-isakmp`: Crea un mapa criptográfico para asociaciones de seguridad dinámicas.
 - `set peer 160.223.145.2`: Especifica la dirección IP del otro extremo del túnel VPN.
